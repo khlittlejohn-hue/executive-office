@@ -4,6 +4,10 @@ A personal, production multi-agent system I designed and run on Claude Code. It 
 
 I am an operator, not an ML engineer. This is applied AI — orchestration, agent design, and workflow automation — built to be genuinely useful in daily work, with a human in the loop on anything that leaves the system.
 
+![Executive Office — Steering Deck](docs/steering-deck.png)
+
+<sub>The Steering Deck — one glance across all 12 departments. Illustrative view; the live system renders from real state files locally and never commits private data.</sub>
+
 | | |
 |---|---|
 | **Departments** | 12, each a self-contained team with its own lead and specialists |

@@ -1,0 +1,30 @@
+# This repo is architecture-only. Guard against ever committing private data.
+
+# Personal / private data — never publish
+**/applications/
+**/resumes/
+**/*resume*.pdf
+**/*resume*.docx
+**/*cover*letter*
+**/dashboard_data.json
+**/status.json
+**/*_snapshot.json
+**/financial-*
+**/network-contacts/
+**/health/
+**/*voice_samples*
+**/*.eml
+
+# Note: examples/status-file-example.md is intentionally tracked (sanitized).
+
+# OS / editor noise
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
+
+# Secrets
+.env
+*.key
+*token*

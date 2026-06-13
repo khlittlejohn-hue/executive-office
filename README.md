@@ -1,5 +1,11 @@
 # Executive Office — a multi-agent AI operations system
 
+![Built with Claude Code](https://img.shields.io/badge/Built_with-Claude_Code-d97757?style=flat-square)
+![Departments](https://img.shields.io/badge/Departments-12-5aa2ff?style=flat-square)
+![Agents](https://img.shields.io/badge/Agents-60%2B-34d399?style=flat-square)
+![External actions](https://img.shields.io/badge/External_actions-human_approved-f5c451?style=flat-square)
+![Approach](https://img.shields.io/badge/Applied_AI-orchestration-a78bfa?style=flat-square)
+
 A personal, production multi-agent system I designed and run on Claude Code. It turns a large language model into a coordinated operating team of 60+ specialized agents that handle real day-to-day workflows: planning, research, drafting, pipeline management, reporting, and review.
 
 I am an operator, not an ML engineer. This is applied AI — orchestration, agent design, and workflow automation — built to be genuinely useful in daily work, with a human in the loop on anything that leaves the system.

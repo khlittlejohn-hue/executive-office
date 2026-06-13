@@ -15,6 +15,18 @@ I am an operator, not an ML engineer. This is applied AI — orchestration, agen
 | **Flagship pipeline** | A 14-stage drafting → adversarial review → validation → go/no-go workflow |
 | **External actions** | Zero autonomous ones — every send and submit waits for a human click |
 | **Substrate** | Claude Code sub-agents, hooks, scheduled tasks, MCP integrations, slash commands, file-based memory |
+| **Control surface** | 30+ slash commands; 20+ recurring scheduled jobs (overnight sourcing, briefs, self-audits) |
+| **Operating scale** | Run daily over months — thousands of agent sessions, 150,000+ agent turns |
+
+## Explore the system
+
+| Document | What's inside |
+|---|---|
+| [ARCHITECTURE.md](./ARCHITECTURE.md) | The org shape, the orchestration rule, the approval gate, the render pipeline, memory. |
+| [docs/AGENTS.md](./docs/AGENTS.md) | The full roster — every department and what each of the 60+ agents does. |
+| [docs/PIPELINE.md](./docs/PIPELINE.md) | The 14-stage application pipeline, stage by stage. |
+| [docs/PATTERNS.md](./docs/PATTERNS.md) | Six engineering patterns worth stealing, with the failures that produced them. |
+| [examples/](./examples) | Sanitized, runnable-shaped examples: an agent, a critic, a slash command, a hook, a scheduled task, a status file. |
 
 ## What it does
 - Runs structured workflows across departments (research, communications, operations, planning, and more), each staffed by purpose-built agents with narrow, well-defined responsibilities.

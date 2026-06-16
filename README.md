@@ -8,7 +8,7 @@
 
 A personal, production multi-agent system I designed and run on Claude Code. It turns a large language model into a coordinated operating team of 60+ specialized agents that handle real day-to-day workflows: planning, research, drafting, pipeline management, reporting, and review.
 
-I am an operator, not an ML engineer. This is applied AI — orchestration, agent design, and workflow automation — built to be genuinely useful in daily work, with a human in the loop on anything that leaves the system.
+I'm an operator, not an ML engineer. This is applied AI — orchestration, agent design, and workflow automation — built to be genuinely useful in daily work, with a human in the loop on anything that leaves the system.
 
 ![Executive Office — Steering Deck](docs/steering-deck.png)
 
@@ -121,7 +121,7 @@ The agent that **writes** is never the agent that **grades**. Optimism and skept
 
 ## Engineering decisions worth stealing
 
-These generalize well beyond my use of them.
+These generalize well beyond my own use of them.
 
 - **Planners are not orchestrators.** Sub-agents can't spawn sub-agents. A department lead plans and audits, then returns a structured instruction for the top-level context to execute. Conflating "manager" with "dispatcher" produces silent no-ops; making the boundary explicit fixed an entire class of failures.
 - **Status freshness as a protocol.** Every department writes a status file after every meaningful action, and all dashboards render from those files. A stale file is a stale dashboard, so freshness is a rule, not a nicety.

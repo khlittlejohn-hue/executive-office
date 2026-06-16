@@ -34,6 +34,16 @@ I'm an operator, not an ML engineer. This is applied AI — orchestration, agent
 | [docs/PATTERNS.md](./docs/PATTERNS.md) | Six engineering patterns worth stealing, with the failures that produced them. |
 | [examples/](./examples) | Sanitized, runnable-shaped examples: an agent, a critic, a slash command, a hook, a scheduled task, a status file. |
 
+## What it produces
+
+This isn't a demo. It ships real, dated artifacts every day, all rendered locally from private state (nothing here is committed). A sampling of the output:
+
+- **A daily executive brief** — a cross-department morning rollup: what each team did overnight, what needs a decision, what's due. One read to run the day.
+- **Mission Control** — the dashboard above: every department's status, the pending-decision queue, and a live "what's left today" action hub. Regenerated on every change with hard invariant checks — every count must tie across every surface, or the build fails loud instead of shipping a wrong number.
+- **Decision-ready work packages** — each one drafted, adversarially reviewed, truthfulness-audited, humanized, and committee-approved through the 14-stage pipeline before it ever reaches me.
+- **Living trackers** — per-domain dashboards (pipeline, outreach, calendar, finance, training) that stay current because every agent writes its state after every action, and a shared completion layer so a thing marked done in one surface is done everywhere.
+- **Drafts staged for one-click approval** — outreach, replies, briefs, prep docs. The system prepares and surfaces; a human approves and sends. Nothing autonomous reaches the outside world.
+
 ## What it does
 - Runs structured workflows across departments (research, communications, operations, planning, and more), each staffed by purpose-built agents with narrow, well-defined responsibilities.
 - Coordinates multi-step pipelines where work fans out to specialists in parallel, then is verified and synthesized before it reaches me.

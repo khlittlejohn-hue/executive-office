@@ -1,4 +1,4 @@
-# Executive Office — a multi-agent AI operations system
+# Executive Office: a multi-agent AI operations system
 
 ![Built with Claude Code](https://img.shields.io/badge/Built_with-Claude_Code-d97757?style=flat-square)
 ![Departments](https://img.shields.io/badge/Departments-12-5aa2ff?style=flat-square)
@@ -8,28 +8,28 @@
 
 A personal, production multi-agent system I designed and run on Claude Code. It turns a large language model into a coordinated operating team of 60+ specialized agents that handle real day-to-day workflows: planning, research, drafting, pipeline management, reporting, and review.
 
-I'm an operator, not an ML engineer. This is applied AI — orchestration, agent design, and workflow automation — built to be genuinely useful in daily work, with a human in the loop on anything that leaves the system.
+I'm an operator, not an ML engineer. This is applied AI (orchestration, agent design, and workflow automation) built to be genuinely useful in daily work, with a human in the loop on anything that leaves the system.
 
-![Executive Office — Steering Deck](docs/steering-deck.png)
+![Executive Office Steering Deck](docs/steering-deck.png)
 
-<sub>The Steering Deck — one glance across all 12 departments. Illustrative view; the live system renders from real state files locally and never commits private data.</sub>
+<sub>The Steering Deck: one glance across all 12 departments. Illustrative view; the live system renders from real state files locally and never commits private data.</sub>
 
 | | |
 |---|---|
 | **Departments** | 12, each a self-contained team with its own lead and specialists |
 | **Agents** | 60+, each with one clear role, its own instructions, and a scoped tool set |
 | **Flagship pipeline** | A 14-stage drafting → adversarial review → validation → go/no-go workflow |
-| **External actions** | Zero autonomous ones — every send and submit waits for a human click |
+| **External actions** | Zero autonomous ones; every send and submit waits for a human click |
 | **Substrate** | Claude Code sub-agents, hooks, scheduled tasks, MCP integrations, slash commands, file-based memory |
 | **Control surface** | 30+ slash commands; 20+ recurring scheduled jobs (overnight sourcing, briefs, self-audits) |
-| **Operating scale** | Run daily over months — thousands of agent sessions, 150,000+ agent turns |
+| **Operating scale** | Run daily over months: thousands of agent sessions, 150,000+ agent turns |
 
 ## Explore the system
 
 | Document | What's inside |
 |---|---|
 | [ARCHITECTURE.md](./ARCHITECTURE.md) | The org shape, the orchestration rule, the approval gate, the render pipeline, memory. |
-| [docs/AGENTS.md](./docs/AGENTS.md) | The full roster — every department and what each of the 60+ agents does. |
+| [docs/AGENTS.md](./docs/AGENTS.md) | The full roster: every department and what each of the 60+ agents does. |
 | [docs/PIPELINE.md](./docs/PIPELINE.md) | The 14-stage application pipeline, stage by stage. |
 | [docs/PATTERNS.md](./docs/PATTERNS.md) | Six engineering patterns worth stealing, with the failures that produced them. |
 | [examples/](./examples) | Sanitized, runnable-shaped examples: an agent, a critic, a slash command, a hook, a scheduled task, a status file. |
@@ -38,11 +38,11 @@ I'm an operator, not an ML engineer. This is applied AI — orchestration, agent
 
 This isn't a demo. It ships real, dated artifacts every day, all rendered locally from private state (nothing here is committed). A sampling of the output:
 
-- **A daily executive brief** — a cross-department morning rollup: what each team did overnight, what needs a decision, what's due. One read to run the day.
-- **Mission Control** — the dashboard above: every department's status, the pending-decision queue, and a live "what's left today" action hub. Regenerated on every change with hard invariant checks — every count must tie across every surface, or the build fails loud instead of shipping a wrong number.
-- **Decision-ready work packages** — each one drafted, adversarially reviewed, truthfulness-audited, humanized, and committee-approved through the 14-stage pipeline before it ever reaches me.
-- **Living trackers** — per-domain dashboards (pipeline, outreach, calendar, finance, training) that stay current because every agent writes its state after every action, and a shared completion layer so a thing marked done in one surface is done everywhere.
-- **Drafts staged for one-click approval** — outreach, replies, briefs, prep docs. The system prepares and surfaces; a human approves and sends. Nothing autonomous reaches the outside world.
+- **A daily executive brief**. A cross-department morning rollup: what each team did overnight, what needs a decision, what's due. One read to run the day.
+- **Mission Control**. The dashboard above: every department's status, the pending-decision queue, and a live "what's left today" action hub. Regenerated on every change with hard invariant checks: every count must tie across every surface, or the build fails loud instead of shipping a wrong number.
+- **Decision-ready work packages**. Each one drafted, adversarially reviewed, truthfulness-audited, humanized, and committee-approved through the 14-stage pipeline before it ever reaches me.
+- **Living trackers**. Per-domain dashboards (pipeline, outreach, calendar, finance, training) that stay current because every agent writes its state after every action, and a shared completion layer so a thing marked done in one surface is done everywhere.
+- **Drafts staged for one-click approval**. Outreach, replies, briefs, prep docs. The system prepares and surfaces; a human approves and sends. Nothing autonomous reaches the outside world.
 
 ## What it does
 - Runs structured workflows across departments (research, communications, operations, planning, and more), each staffed by purpose-built agents with narrow, well-defined responsibilities.
@@ -52,7 +52,7 @@ This isn't a demo. It ships real, dated artifacts every day, all rendered locall
 
 ## Architecture
 
-A top-level coordinator dispatches work to department teams; each department has a lead (planner and auditor) and a set of specialists. Only the top of the call stack orchestrates — leads plan and validate, they do not fan out work themselves. That one boundary is the backbone of the system.
+A top-level coordinator dispatches work to department teams; each department has a lead (planner and auditor) and a set of specialists. Only the top of the call stack orchestrates; leads plan and validate, they do not fan out work themselves. That one boundary is the backbone of the system.
 
 ```mermaid
 flowchart TB
@@ -78,7 +78,7 @@ flowchart TB
     COS --> D11["Social & Marketing"]
     COS --> D12["Entrepreneur"]
 
-    QA["Super-User QA — domain critics file tickets against every surface"]
+    QA["Super-User QA: domain critics file tickets against every surface"]
     COS -.audited by.-> QA
 
     classDef p fill:#fde68a,stroke:#92400e,stroke-width:3px,color:#000
@@ -135,7 +135,7 @@ These generalize well beyond my own use of them.
 
 - **Planners are not orchestrators.** Sub-agents can't spawn sub-agents. A department lead plans and audits, then returns a structured instruction for the top-level context to execute. Conflating "manager" with "dispatcher" produces silent no-ops; making the boundary explicit fixed an entire class of failures.
 - **Status freshness as a protocol.** Every department writes a status file after every meaningful action, and all dashboards render from those files. A stale file is a stale dashboard, so freshness is a rule, not a nicety.
-- **Render-time invariants that fail loud.** Dashboards are regenerated by a deterministic pipeline that runs audits on every build — every count must agree across every surface, and every clickable element must be wired — or the build fails instead of shipping wrong numbers.
+- **Render-time invariants that fail loud.** Dashboards are regenerated by a deterministic pipeline that runs audits on every build: every count must agree across every surface, and every clickable element must be wired, or the build fails instead of shipping wrong numbers.
 - **Human-confirmed state is immutable to automation.** When a person marks something done, no background job may silently revert it. The reconciler can heal missing data but is structurally incapable of demoting a human's confirmed action.
 - **Determinism where it counts.** Creative judgment is model-driven; counting, joining, rendering, and auditing are plain code. A language model is a poor database.
 
@@ -145,7 +145,7 @@ Claude Code (sub-agents, slash commands, hooks, scheduled tasks, MCP integration
 See [`examples/`](./examples) for sanitized agent and workflow definitions, and [ARCHITECTURE.md](./ARCHITECTURE.md) for a deeper look at the design.
 
 ## A note on scope
-This repository is an architecture and patterns showcase. The running system operates on private data that lives locally and is never committed — what's here is the design, not the data.
+This repository is an architecture and patterns showcase. The running system operates on private data that lives locally and is never committed. What's here is the design, not the data.
 
 ---
-Built and maintained by Kyle Littlejohn. Applied-AI orchestration and workflow automation — not model training or ML engineering.
+Built and maintained by Kyle Littlejohn. Applied-AI orchestration and workflow automation, not model training or ML engineering.

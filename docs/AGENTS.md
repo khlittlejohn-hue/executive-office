@@ -44,7 +44,7 @@ Functions are listed first; the persona that voices each one is in parentheses.
 | Function | Role |
 |---|---|
 | **Department Head** | Capital allocation, investment philosophy, risk posture. |
-| **Bookkeeping & Cash Flow** | Monthly P&L, category spend, net-worth trend, runway math. Cites numbers, never invents them. |
+| **Bookkeeping & Cash Flow** | Monthly P&L, category spend, and budget tracking. Cites numbers, never invents them. |
 | **Tax Strategy** | Loss-harvesting, retirement-account architecture, capital-gains posture. Drafts; never files; recommends a licensed CPA at the line. |
 | **Education Coach** | Investing from zero (accounts, funding mechanics, first trades) explained at exactly the right level. |
 | **Portfolio Operations** | Allocation, rebalancing plans, trade tickets. Drafts the mechanics; never executes. |
@@ -58,7 +58,7 @@ Functions are listed first; the persona that voices each one is in parentheses.
 | **Email** | 4 | Inbox triage, formal draft replies, escalation handling. |
 | **Communications** | 4 | Voice and tone for all external writing: personal notes, relationship correspondence, networking. |
 | **Lifestyle & Operations** | 6 | Bills, travel, documents, provisions, plus events and nightlife. |
-| **Fitness & Performance** | 7 | Training plans, load analytics, hard workouts, fundamentals, nutrition, race calendar, health tracking. |
+| **Fitness & Performance** | 7 | Training plans, load analytics, hard workouts, fundamentals, nutrition, and race calendar. |
 | **Dashboard & Tools** | 5 | The internal tooling: UI/UX direction, frontend, the render pipeline, and a deliberately bold counterweight. |
 | **Learning & Improvement** | 6 | Curating, adopting, and measuring workflow improvements over time. |
 | **Social & Marketing** | 6 | Content pipeline, production, brand voice, cadence, and monetization. |

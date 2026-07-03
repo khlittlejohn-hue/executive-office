@@ -8,7 +8,7 @@ Functions are listed first; the persona that voices each one is in parentheses.
 
 | Function | Role |
 |---|---|
-| **Chief of Staff** | Cross-department aggregation, daily brief, approval queue, dispatch routing. The single throat to choke. |
+| **Chief of Staff** | Cross-department aggregation, daily brief, approval queue, dispatch routing. The single point of accountability. |
 | **Executive Assistant** | Hour-by-hour task list, day-of nudges, quick lookups. Peer to the CoS, not under it. |
 | **Strategic Coach** | Sits outside every pipeline. Reviews all agents for drift and contradiction, watches sessions for repeated friction, scans for unused platform capability. Proposes edits, never applies them. |
 

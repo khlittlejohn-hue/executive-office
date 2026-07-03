@@ -1,4 +1,4 @@
-# Status file — the freshness protocol
+# Status file: the freshness protocol
 
 An example of the contract every department implements, sanitized. Each department writes one status file after every meaningful action, and every dashboard renders from these files. A stale file is a stale dashboard, so freshness is enforced as a rule.
 

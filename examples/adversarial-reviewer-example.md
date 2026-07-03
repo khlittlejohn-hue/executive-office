@@ -1,6 +1,6 @@
 ---
 name: recruiter-simulator
-description: Reads a finished package the way a skeptical reviewer actually reads it — fast, hunting for reasons to reject. Drafts a verdict only.
+description: Reads a finished package the way a skeptical reviewer actually reads it: fast, hunting for reasons to reject. Drafts a verdict only.
 tools: Read, Write
 ---
 

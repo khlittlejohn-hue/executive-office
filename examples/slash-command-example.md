@@ -1,4 +1,4 @@
-# /brief — daily cross-department brief
+# /brief: daily cross-department brief
 
 An example slash command, sanitized. It shows how the system packages a multi-step, multi-agent workflow behind a single repeatable entry point.
 
@@ -9,8 +9,8 @@ An example slash command, sanitized. It shows how the system packages a multi-st
 4. Renders the brief to an HTML view and surfaces the top decisions for approval.
 
 ## Usage
-- `/brief` — full brief, archived to history.
-- `/brief status` — snapshot only, no archive.
+- `/brief`, full brief, archived to history.
+- `/brief status`, snapshot only, no archive.
 
 ## Design notes
 - Single-writer: only this command writes the daily brief file, which prevents state drift across the system.

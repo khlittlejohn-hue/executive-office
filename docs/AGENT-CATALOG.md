@@ -209,7 +209,7 @@ Domain critics, each modeled on a real authority in their field, who walk every 
 
 ## Totals
 
-Three leadership roles, twelve departments, and a fourteen-agent QA team. The departments carry Careers (15), Research (3), Finance (11), Calendar (3), Email (4), Communications (5), Lifestyle and Operations (7), Fitness (7), Dashboard and Tools (6), Learning (6), Social and Marketing (6), and Entrepreneur (6), for eighty-two department specialists. With the leadership layer and the QA team, that is ninety-nine agents in all, above the sixty-plus the system is usually described by, and every one of them a named, single-purpose unit you can actually hold in your head. A separate governance layer of apex reviewers sits over the whole system as the final quality gate; it decides nothing externally and sends nothing, which is why it is counted apart from the working roster here.
+Three leadership roles, twelve departments, and a fourteen-agent QA team. The departments carry Careers (15), Research (3), Finance (11), Calendar (3), Email (4), Communications (5), Lifestyle and Operations (7), Fitness (7), Dashboard and Tools (6), Learning (6), Social and Marketing (6), and Entrepreneur (6), for eighty-two department specialists. With the leadership layer and the QA team, the working roster is ninety-nine agents, each a named, single-purpose unit you can actually hold in your head. A separate apex governance layer of four reviewers sits over the whole system as its final quality gate; it decides nothing externally and sends nothing, which is why it is counted apart. Counting it, the system runs more than one hundred named agents in all.
 
 ---
 

@@ -56,7 +56,7 @@ Deep-dive analysis on companies, people, products, and decisions. Rigor first, t
 | Turns dense analysis into a clear executive one-pager. Where the head is rigor, this is readability. | One-Pager Writer (Luna) |
 | Adds the zoom-out frame of history, power, and the long game when "why now" is load-bearing. | Macro Context (Dumbledore) |
 
-## Finance (11)
+## Finance (10)
 
 Two desks under one head: a strategy-and-operations desk that drafts the mechanics, and an investment-research desk that debates before it concludes. Every external action queues for approval. Drafts; never files; never executes.
 
@@ -67,7 +67,7 @@ Two desks under one head: a strategy-and-operations desk that drafts the mechani
 | Tax-loss harvesting, retirement-account architecture, capital-gains posture. Drafts; never files; recommends a licensed CPA at the line. | Tax Strategy (Ari Spyros) |
 | Investing from zero: accounts, funding mechanics, first trades explained at exactly the right level. | Education Coach (Wendy Rhoades) |
 | Allocation, rebalancing plans, trade tickets. Drafts the mechanics; never executes. | Portfolio Operations (Dollar Bill) |
-| Leads the investment desk, synthesizes desk views, writes the lead thesis memos. Cites sources; Kyle decides. | Head of Research (Taylor Mason) |
+| Leads the investment desk, synthesizes desk views, writes the lead thesis memos. Cites sources; the principal decides. | Head of Research (Taylor Mason) |
 | Macro, rates, and the Fed regime translated into market implications. | Macro Analyst (Mafee) |
 | Tech, growth, and disruption read with an operator's instinct, not a sell-side one. | Growth Analyst (Bonnie Barella) |
 | Quality, fundamentals, and defensives: balance sheets, moats, capital-allocation discipline. | Quality Analyst (Lara Axelrod) |
@@ -81,7 +81,7 @@ Owns the week. Reviews the next seven days, resolves conflicts, protects focus b
 |---|---|
 | Reviews the next seven days, resolves conflicts, enforces no-meeting rules, drafts reschedule proposals. | Department Head (Monica Geller) |
 | Prepares briefing packets for upcoming meetings: location, attendees, prep needed, what was last said. | Day-of Logistics (Chandler Bing) |
-| Pulls cross-meeting context so Kyle walks in primed: last conversation, open threads, recent posts. | Cross-Meeting Research (Ross Geller) |
+| Pulls cross-meeting context so the principal walks in primed: last conversation, open threads, recent posts. | Cross-Meeting Research (Ross Geller) |
 
 ## Email Operations (4)
 
@@ -94,7 +94,7 @@ Reads the inbox, categorizes against fixed buckets, decides priority versus nois
 | Drafts careful, articulate replies to recruiters, hiring managers, and executive contacts. Drafts land as drafts. | Formal Drafter (Bail Organa) |
 | Handles the tricky threads: declines, ghosted follow-ups, awkward reschedules, without escalating them further. | Escalation Handler (Princess Leia) |
 
-## Communications (5)
+## Communications (6)
 
 Voice and tone for all external writing that is not the job search: thank-yous, relationship correspondence, networking, public posts. The department head holds a veto on anything that does not sound like a person. Drafts only.
 
@@ -105,6 +105,7 @@ Voice and tone for all external writing that is not the job search: thank-yous, 
 | Long-arc warm contacts: old colleagues, mentors, referrers. The keep-the-door-open register, tracked per person. | Relationship Correspondence (Ann Perkins) |
 | Cold-warm intros and anything where wit matters more than brevity, with a real point underneath. | Networking Charm (Tom Haverford) |
 | Reads every outbound draft for diction and voice match; owns the living voice spec and the corrections ledger. Advisory, never blocks. | Voice and Vibes Check (Mark Brendanawicz) |
+| The binding final voice gate: reads every outbound draft the way the principal would the moment before sending, and rules on one question, does this sound like a person and is it free of every machine tell. Blocks; never sends. | The principal's voice |
 
 ## Lifestyle and Operations (7)
 
@@ -155,7 +156,7 @@ Curates, adopts, and measures workflow improvements over time. Categorizes an in
 |---|---|
 | Owns the tip-curation pipeline end to end; wraps extractions and verdicts into an adoption workflow. | Department Head (Carmy) |
 | First-pass categorizer and router: classifies each shared link, extracts structured data, routes to the right destination. | Categorizer and Router (Sugar) |
-| Owns the canonical tips table Kyle reads and edits; turns raw verdicts into a coherent view. | Tip Curator (Sydney) |
+| Owns the canonical tips table the principal reads and edits; turns raw verdicts into a coherent view. | Tip Curator (Sydney) |
 | Executes an adopted tip precisely within the approval rules; writes the change record. No improv, no scope creep. | Implementer (Tina) |
 | The longitudinal library: reads adopted and skipped records over time and surfaces the patterns. | Pattern Analyst (Marcus) |
 | Owns the tips dashboard: the clean visual view, rendered from the tracker. | Dashboard UI (Richie) |
@@ -169,7 +170,7 @@ The content pipeline: ideas, production, brand voice, cadence, and the commercia
 | Owns the content roadmap, the video pipeline, and posting cadence; scopes requests and dispatches. | Department Head (Liz Lemon) |
 | Content ideas and hook angles; owns the idea backlog and finds the unexpected angle. | Ideas and Hooks (Frank Rossitano) |
 | Production and editing: the full script, b-roll cues, captions, hashtags, posting specs. | Production (Pete Hornberger) |
-| Brand voice and on-camera coaching: what sounds like Kyle and what does not; the on-brand gut check. | Brand Voice (Jenna Maroney) |
+| Brand voice and on-camera coaching: what sounds like the principal and what does not; the on-brand gut check. | Brand Voice (Jenna Maroney) |
 | Posting cadence and audience tracking: the content calendar, post-publish metrics, what is hitting and why. | Cadence and Audience (Kenneth Parcell) |
 | The commercial layer: the monetization roadmap, sponsorship and pricing strategy, revenue implications. | Monetization (Jack Donaghy) |
 
@@ -183,7 +184,7 @@ A panel that pressure-tests every new venture from five angles, then synthesizes
 | Cold financial discipline: cap tables, breakeven, ROI, unit economics. Says "I'm out" when the numbers do not work. | Financials (Kevin O'Leary) |
 | Product-market-fit instinct: is this a hero product or a zero, and will the customer pay today. | Product-Market Fit (Lori Greiner) |
 | Brand and positioning: naming, the marketing angle, the plan to first customers without a budget. | Brand and Positioning (Daymond John) |
-| Founder fit and the gut check: is Kyle the right person to build this right now, at this life stage. | Founder Fit (Barbara Corcoran) |
+| Founder fit and the gut check: is the principal the right person to build this right now, at this life stage. | Founder Fit (Barbara Corcoran) |
 | Tech feasibility and scaling: can it be built, with what stack, in what timeframe, and will it hold past a hundred users. | Tech Feasibility (Robert Herjavec) |
 
 ## Super-User QA: the standing critics (14)
@@ -209,7 +210,7 @@ Domain critics, each modeled on a real authority in their field, who walk every 
 
 ## Totals
 
-Three leadership roles, twelve departments, and a fourteen-agent QA team. The departments carry Careers (15), Research (3), Finance (11), Calendar (3), Email (4), Communications (5), Lifestyle and Operations (7), Fitness (7), Dashboard and Tools (6), Learning (6), Social and Marketing (6), and Entrepreneur (6), for eighty-two department specialists. With the leadership layer and the QA team, the working roster is ninety-nine agents, each a named, single-purpose unit you can actually hold in your head. A separate apex governance layer of four reviewers sits over the whole system as its final quality gate; it decides nothing externally and sends nothing, which is why it is counted apart. Counting it, the system runs more than one hundred named agents in all.
+Three leadership roles, twelve departments, and a fourteen-agent QA team. The departments carry Careers (15), Research (3), Finance (10), Calendar (3), Email (4), Communications (6), Lifestyle and Operations (7), Fitness (7), Dashboard and Tools (6), Learning (6), Social and Marketing (6), and Entrepreneur (6), for seventy-nine department specialists. With the three-person leadership layer and the fourteen-agent QA team, that is ninety-six named agents in the catalog above, each a single-purpose unit you can actually hold in your head. A three-agent apex governance layer sits over the whole system as its final quality gate; it decides nothing externally and sends nothing. Counting it, the system runs ninety-nine named agents in all, which is why it is described by the round floor of ninety-plus.
 
 ---
 

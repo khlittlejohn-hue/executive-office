@@ -2,11 +2,11 @@
 
 ![Built with Claude Code](https://img.shields.io/badge/Built_with-Claude_Code-d97757?style=flat-square)
 ![Departments](https://img.shields.io/badge/Departments-12-5aa2ff?style=flat-square)
-![Agents](https://img.shields.io/badge/Agents-100%2B-34d399?style=flat-square)
+![Agents](https://img.shields.io/badge/Agents-90%2B-34d399?style=flat-square)
 ![External actions](https://img.shields.io/badge/External_actions-human_approved-f5c451?style=flat-square)
 ![Approach](https://img.shields.io/badge/Applied_AI-orchestration-a78bfa?style=flat-square)
 
-A personal, production multi-agent system I designed and run on Claude Code. It turns a large language model into a coordinated operating team of 100+ specialized agents that handle real day-to-day workflows: planning, research, drafting, pipeline management, reporting, and review.
+A personal, production multi-agent system I designed and run on Claude Code. It turns a large language model into a coordinated operating team of 90+ specialized agents that handle real day-to-day workflows: planning, research, drafting, pipeline management, reporting, and review.
 
 I'm an operator, not an ML engineer. This is applied AI (orchestration, agent design, and workflow automation) built to be genuinely useful in daily work, with a human in the loop on anything that leaves the system.
 
@@ -17,7 +17,7 @@ I'm an operator, not an ML engineer. This is applied AI (orchestration, agent de
 | | |
 |---|---|
 | **Departments** | 12, each a self-contained team with its own lead and specialists |
-| **Agents** | 100+, each with one clear role, its own instructions, and a scoped tool set |
+| **Agents** | 90+, each with one clear role, its own instructions, and a scoped tool set |
 | **Flagship pipeline** | A 14-stage drafting → adversarial review → validation → go/no-go workflow |
 | **External actions** | Zero autonomous ones; every send and submit waits for a human click |
 | **Substrate** | Claude Code sub-agents, hooks, scheduled tasks, MCP integrations, slash commands, file-based memory |
@@ -91,7 +91,7 @@ flowchart TB
 ```
 
 - **Orchestration layer:** a top-level coordinator dispatches tasks to specialized sub-agents and aggregates their output into a single decision-ready result.
-- **100+ specialized agents**, each with one clear role, its own instructions, and a scoped tool set.
+- **90+ specialized agents**, each with one clear role, its own instructions, and a scoped tool set.
 - **Slash commands:** repeatable entry points for common multi-agent workflows.
 - **Hooks:** automated checks that fire at defined points to enforce the system's rules.
 - **Scheduled tasks:** recurring jobs that keep the system current without manual triggering.

@@ -28,11 +28,12 @@ I'm an operator, not an ML engineer. This is applied AI (orchestration, agent de
 
 | Document | What's inside |
 |---|---|
-| [ARCHITECTURE.md](./ARCHITECTURE.md) | The org shape, the orchestration rule, the approval gate, the render pipeline, memory. |
-| [docs/AGENTS.md](./docs/AGENTS.md) | The full roster: every department and what each of the 60+ agents does. |
-| [docs/PIPELINE.md](./docs/PIPELINE.md) | The 14-stage application pipeline, stage by stage. |
+| [ARCHITECTURE.md](./ARCHITECTURE.md) | The deep dive: orchestration and dispatch, the adversarial review pipeline, the human-in-the-loop gate model, state and memory, the QA critic layer, and model-tier routing. Six diagrams. |
+| [docs/AGENT-CATALOG.md](./docs/AGENT-CATALOG.md) | The complete roster across 12 departments, leadership, and the QA team, each agent with its single job. |
+| [docs/PIPELINE.md](./docs/PIPELINE.md) | The 14-stage work pipeline, stage by stage. |
 | [docs/PATTERNS.md](./docs/PATTERNS.md) | Six engineering patterns worth stealing, with the failures that produced them. |
-| [examples/](./examples) | Sanitized, runnable-shaped examples: an agent, a critic, a slash command, a hook, a scheduled task, a status file. |
+| [examples/](./examples) | Sanitized, runnable-shaped examples, including [a full pipeline run](./examples/pipeline-run-example.md) with a real truthfulness-gate kickback: an agent, a critic, a slash command, a hook, a scheduled task, a status file. |
+| [docs/AGENTS.md](./docs/AGENTS.md) | The original condensed roster overview. |
 
 ## What it produces
 

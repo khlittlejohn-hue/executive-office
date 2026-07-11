@@ -24,7 +24,7 @@ The three roles that sit above and beside the departments. The Chief of Staff ag
 | Hour-by-hour task list, day-of nudges, quick lookups, inbound routing. Peer to the CoS, not under it. | Executive Assistant (Jeeves) |
 | Sits outside every pipeline. Reviews all agents for drift and contradiction, watches sessions for repeated friction, scans for unused platform capability. Proposes edits, never applies them. | Strategic Coach (Sherlock Holmes) |
 
-## Careers: the job-search pipeline (15)
+## Careers: the job-search pipeline (23)
 
 The flagship department. A positioning brief opens the pipeline; parallel drafting fans out; independent critics attack the package; a committee makes the final go or no-go call. Drafts only. A human submits every application.
 
@@ -45,6 +45,21 @@ The flagship department. A positioning brief opens the pipeline; parallel drafti
 | Scores aging applications and outreach, drafts personalized nudges on a one- and two-week cadence. | Follow-up Tracker (Punchy) |
 | Cross-references the resume against likely questions, builds STAR stories, predicts skepticism, drafts questions to ask back. | Interview Prep (Sandy Rivers) |
 | Reads the professional feed for hiring posts and warm paths the job boards never surface; classifies and fit-scores. Surfaces only. | Feed Scout (Nora) |
+
+### Sterling Cooper: the case-study studio (8)
+
+A cell inside Careers, added 2026-07-11, that activates for take-home and live case-study interviews. Owns the narrative and the deliverable end-to-end, running its own internal fan-out-then-critique pass before anything reaches the candidate.
+
+| Function | Persona |
+|---|---|
+| Owns the narrative and the deliverable end-to-end: decodes the prompt, sets the day-1 hypothesis, orchestrates the studio, holds the final go gate on the artifact. | Studio Lead (Don Draper) |
+| Deep-dives the case company: business model, strategy, competitors, leadership, the real problem behind the prompt's wording. | Account Research (Pete Campbell) |
+| Grounds every recommendation in a real precedent or industry benchmark so it reads as proven, not invented. | Precedent and Benchmarks (Roger Sterling) |
+| Owns the quantitative backbone: market sizing, unit economics, the financial model, sensitivity analysis. | Numbers and Rigor (Lane Pryce) |
+| Turns the studio's intel into the answer-first slide deck and executive summary; owns structure, flow, and copy. | Deck Architect (Peggy Olson) |
+| Applies the target company's visual identity so the deliverable looks board-grade, not generic. | Packaging and Brand (Joan Holloway) |
+| Teaches case methodology and frameworks, then runs mock presentations and hostile Q&A so the candidate can defend it live. | Methodology Coach and Rehearsal (Bert Cooper) |
+| Role-plays the actual interviewers, attacking every claim and surfacing the hard questions before the real thing. | Adversarial Interviewer Simulator (Conrad Hilton) |
 
 ## Research and Intelligence (3)
 
@@ -210,7 +225,7 @@ Domain critics, each modeled on a real authority in their field, who walk every 
 
 ## Totals
 
-Three leadership roles, twelve departments, and a fourteen-agent QA team. The departments carry Careers (15), Research (3), Finance (10), Calendar (3), Email (4), Communications (6), Lifestyle and Operations (7), Fitness (7), Dashboard and Tools (6), Learning (6), Social and Marketing (6), and Entrepreneur (6), for seventy-nine department specialists. With the three-person leadership layer and the fourteen-agent QA team, that is ninety-six named agents in the catalog above, each a single-purpose unit you can actually hold in your head. A three-agent apex governance layer sits over the whole system as its final quality gate; it decides nothing externally and sends nothing. Counting it, the system runs ninety-nine named agents in all, which is why it is described by the round floor of ninety-plus.
+Three leadership roles, twelve departments, and a fourteen-agent QA team. The departments carry Careers (23, including the eight-agent Sterling Cooper case-study studio added 2026-07-11), Research (3), Finance (10), Calendar (3), Email (4), Communications (6), Lifestyle and Operations (7), Fitness (7), Dashboard and Tools (6), Learning (6), Social and Marketing (6), and Entrepreneur (6), for eighty-seven department specialists. With the three-person leadership layer and the fourteen-agent QA team, that is one hundred and four named agents in the catalog above, each a single-purpose unit you can actually hold in your head. A three-agent apex governance layer sits over the whole system as its final quality gate; it decides nothing externally and sends nothing. Counting it, the system runs one hundred and seven named agents in all, which is why it is described by the round floor of hundred-plus. (Prior count, superseded 2026-07-11: ninety-six catalog agents + three apex = ninety-nine, described as ninety-plus.)
 
 ---
 

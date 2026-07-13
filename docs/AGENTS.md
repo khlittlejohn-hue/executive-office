@@ -1,6 +1,6 @@
 # The roster
 
-Sixty-plus agents across twelve departments, plus a chief of staff, an executive assistant, a strategic coach, and a standing QA team. Each agent has one job, its own system prompt, and a scoped tool set. They are named and themed on purpose: a characterful, legible agent is far easier to reason about, trust, and debug than `agent_07`.
+100+ agents across 12 departments, plus a chief of staff, an executive assistant, a strategic coach, and a standing QA team. Each agent has one job, its own system prompt, and a scoped tool set. They are named and themed on purpose: a characterful, legible agent is far easier to reason about, trust, and debug than `agent_07`.
 
 Functions are listed first; the persona that voices each one is in parentheses.
 

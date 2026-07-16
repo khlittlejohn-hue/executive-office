@@ -1,6 +1,6 @@
 # Pipeline run: one package through the gauntlet
 
-An annotated transcript of a single application package moving through the [Careers pipeline](../docs/PIPELINE.md), sanitized. The company and role are invented (a mid-market SaaS company hiring a Chief of Staff), but the shape of the run is representative: this one includes a truthfulness kickback and a QC kickback, because a run with no kickbacks would tell you nothing about whether the gates work. Roles below are the functions from [the roster](../docs/AGENTS.md).
+An annotated transcript of a single application package moving through the [Careers pipeline](../docs/PIPELINE.md), sanitized. The company and role are invented (a mid-market SaaS company hiring a Chief of Staff), but the shape of the run is representative: this one includes a truthfulness kickback and a QC kickback, because a run with no kickbacks would tell you nothing about whether the gates work. Roles below are the functions from [the agent catalog](../docs/AGENT-CATALOG.md).
 
 ## 1 · The positioning brief
 

@@ -6,6 +6,8 @@
 ![External actions](https://img.shields.io/badge/External_actions-human_approved-f5c451?style=flat-square)
 ![Approach](https://img.shields.io/badge/Applied_AI-orchestration-a78bfa?style=flat-square)
 
+For 12+ years I have been the Chief of Staff and Strategy & Operations leader who builds the operating systems other organizations run on. Naturally, I built one for my own.
+
 A personal, production multi-agent system I designed and run on Claude Code. It turns a large language model into a coordinated operating team of 100+ specialized agents that handle real day-to-day workflows: planning, research, drafting, pipeline management, reporting, and review.
 
 I'm an operator, not an ML engineer. This is applied AI (orchestration, agent design, and workflow automation) built to be genuinely useful in daily work, with a human in the loop on anything that leaves the system.
@@ -33,7 +35,6 @@ I'm an operator, not an ML engineer. This is applied AI (orchestration, agent de
 | [docs/PIPELINE.md](./docs/PIPELINE.md) | The 14-stage work pipeline, stage by stage. |
 | [docs/PATTERNS.md](./docs/PATTERNS.md) | Six engineering patterns worth stealing, with the failures that produced them. |
 | [examples/](./examples) | Sanitized, runnable-shaped examples, including [a full pipeline run](./examples/pipeline-run-example.md) with a real truthfulness-gate kickback: an agent, a critic, a slash command, a hook, a scheduled task, a status file. |
-| [docs/AGENTS.md](./docs/AGENTS.md) | The original condensed roster overview. |
 
 ## What it produces
 

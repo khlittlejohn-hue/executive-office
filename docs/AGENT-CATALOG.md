@@ -14,6 +14,29 @@ Nothing autonomous reaches the outside world. Every agent below drafts and prepa
 
 Each row pairs a function with the role that owns it.
 
+## Contents
+
+- [Leadership layer](#leadership-layer)
+- [Careers: the job-search pipeline (23)](#careers-the-job-search-pipeline-23)
+  - [The case-study studio (8)](#the-case-study-studio-8)
+- [Research and Intelligence (3)](#research-and-intelligence-3)
+- [Finance (10)](#finance-10)
+- [Calendar and Scheduling (3)](#calendar-and-scheduling-3)
+- [Email Operations (4)](#email-operations-4)
+- [Communications (6)](#communications-6)
+- [Lifestyle and Operations (7)](#lifestyle-and-operations-7)
+- [Fitness and Performance (7)](#fitness-and-performance-7)
+- [Dashboard and Tools (6)](#dashboard-and-tools-6)
+- [Learning and Improvement (6)](#learning-and-improvement-6)
+- [Social and Marketing (6)](#social-and-marketing-6)
+- [Entrepreneur and Ventures (6)](#entrepreneur-and-ventures-6)
+- [Super-User QA: the standing critics (14)](#super-user-qa-the-standing-critics-14)
+- [Totals](#totals)
+
+## The count, verified
+
+87 department specialists, plus the 3-role leadership layer, plus the 14-agent QA team, is 104 named agents. Add the 3-agent apex governance layer and the total is 107, which is why the system is described by the round floor of 100+. The full breakdown, department by department, is in [Totals](#totals) at the bottom.
+
 ## Leadership layer
 
 The three roles that sit above and beside the departments. The Chief of Staff aggregates and reports; the Executive Assistant runs the day; the Coach reviews the whole system from outside it.

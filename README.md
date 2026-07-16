@@ -14,7 +14,7 @@ I'm an operator, not an ML engineer. This is applied AI (orchestration, agent de
 
 ![Executive Office Steering Deck](docs/steering-deck.png)
 
-<sub>The Steering Deck: one glance across all 12 departments. Illustrative view captured at an earlier agent count; the live system renders from real state files locally and never commits private data, and the current counts are the ones stated throughout this README (12 departments, 100+ agents).</sub>
+<sub>The Steering Deck: one glance across all 12 departments. This is a demonstration environment built with sample data — no personal records, ever. The live system renders from real state files locally and never commits private data; source for this demo view is at <a href="docs/source/steering-deck-demo.html">docs/source/steering-deck-demo.html</a>.</sub>
 
 | | |
 |---|---|

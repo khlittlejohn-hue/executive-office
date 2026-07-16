@@ -1,0 +1,103 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @import url('https://fonts.bunny.net/css?family=geist:400,500,600,700|geist-mono:400,500,600&display=swap');
+  :root{
+    --bg:#0c0b0e; --panel:#16151b; --panel2:#100f15; --line:#262430;
+    --ink:#f3f0ea; --ink2:#a39d97; --ink3:#7f7971;
+    --gold:#f5c451; --green:#34d399; --blue:#5aa2ff; --amber:#f5c451; --red:#f47174;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:2000px;background:var(--bg);color:var(--ink);font-family:'Geist',-apple-system,sans-serif;padding:40px 48px}
+  .top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:26px}
+  .ttl{font-size:34px;font-weight:700;letter-spacing:-.5px}
+  .ttl b{color:var(--gold);font-weight:700}
+  .sub{color:var(--ink2);font-size:15px;margin-top:8px;font-family:'Geist Mono',monospace}
+  .badge-row{display:flex;gap:10px;margin-top:14px}
+  .demo-badge{display:inline-flex;align-items:center;gap:7px;font-family:'Geist Mono',monospace;font-size:12px;font-weight:600;letter-spacing:1px;color:#1a1300;background:var(--gold);border-radius:999px;padding:6px 14px}
+  .status{text-align:right}
+  .status .live{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-family:'Geist Mono',monospace;font-size:13px;font-weight:600;letter-spacing:.5px}
+  .status .live::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green)}
+  .status .meta{color:var(--ink3);font-size:12.5px;margin-top:6px;font-family:'Geist Mono',monospace}
+  .stats{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:28px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .stat b{display:block;font-size:32px;font-weight:700;line-height:1}
+  .stat span{display:block;margin-top:8px;font-size:11.5px;letter-spacing:.5px;color:var(--ink3);font-family:'Geist Mono',monospace;text-transform:uppercase}
+  .g{color:var(--green)} .bl{color:var(--blue)} .go{color:var(--gold)} .wh{color:var(--ink)}
+  .sechead{font-size:11.5px;letter-spacing:1.5px;color:var(--ink3);font-family:'Geist Mono',monospace;text-transform:uppercase;margin-bottom:14px}
+  .depts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px}
+  .dept{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .dept .h{display:flex;justify-content:space-between;align-items:center}
+  .dept .name{font-size:16px;font-weight:600;display:flex;align-items:center;gap:9px}
+  .dept .count{font-family:'Geist Mono',monospace;font-size:12px;color:var(--ink3);background:var(--panel2);border-radius:6px;padding:2px 8px}
+  .dept .st{margin-top:10px;font-size:13px;color:var(--ink2);display:flex;align-items:center;gap:7px}
+  .dept .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+  .pipeline{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px 26px}
+  .pipeline .h{font-size:16px;font-weight:600;margin-bottom:16px}
+  .flow{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-family:'Geist Mono',monospace;font-size:13px}
+  .step{border:1px solid var(--line);border-radius:9px;padding:9px 14px;background:var(--panel2)}
+  .step.attack{border-color:color-mix(in oklab,var(--red) 45%,var(--line));color:var(--red)}
+  .step.gate{border-color:color-mix(in oklab,var(--gold) 45%,var(--line));color:var(--gold)}
+  .step.done{border-color:color-mix(in oklab,var(--green) 45%,var(--line));color:var(--green)}
+  .arr{color:var(--ink3)}
+  .foot{display:flex;justify-content:space-between;margin-top:26px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--ink3)}
+</style></head>
+<body>
+  <div class="top">
+    <div>
+      <div class="ttl">Executive <b>Office</b> &middot; Steering Deck</div>
+      <div class="sub">12 departments &middot; 100+ agents &middot; human-in-the-loop on every external action</div>
+      <div class="badge-row"><span class="demo-badge">&#9679; DEMONSTRATION ENVIRONMENT</span></div>
+    </div>
+    <div class="status">
+      <div class="live">ALL SYSTEMS NOMINAL</div>
+      <div class="meta">rendered 06:18 &middot; invariants &check; &middot; numbers tie &check;</div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b class="g">12</b><span>Active depts</span></div>
+    <div class="stat"><b class="bl">0</b><span>Pending approvals</span></div>
+    <div class="stat"><b class="wh">7</b><span>In flight</span></div>
+    <div class="stat"><b class="go">3</b><span>Awaiting review</span></div>
+    <div class="stat"><b class="wh">142</b><span>Items tracked</span></div>
+    <div class="stat"><b class="g">&check;</b><span>Audits passing</span></div>
+  </div>
+
+  <div class="sechead">Departments</div>
+  <div class="depts">
+    <div class="dept"><div class="h"><span class="name">📋 Careers</span><span class="count">14</span></div><div class="st"><span class="dot" style="background:var(--green)"></span>Pipeline clear &middot; 2 in committee</div></div>
+    <div class="dept"><div class="h"><span class="name">📅 Calendar</span><span class="count">3</span></div><div class="st"><span class="dot" style="background:var(--green)"></span>Week planned &middot; 0 conflicts</div></div>
+    <div class="dept"><div class="h"><span class="name">✉️ Email</span><span class="count">4</span></div><div class="st"><span class="dot" style="background:var(--blue)"></span>Inbox swept &middot; 5 drafts queued</div></div>
+    <div class="dept"><div class="h"><span class="name">💬 Communications</span><span class="count">4</span></div><div class="st"><span class="dot" style="background:var(--green)"></span>2 notes drafted for review</div></div>
+    <div class="dept"><div class="h"><span class="name">🏠 Lifestyle &amp; Ops</span><span class="count">6</span></div><div class="st"><span class="dot" style="background:var(--amber)"></span>1 bill due in 3 days</div></div>
+    <div class="dept"><div class="h"><span class="name">💪 Fitness</span><span class="count">7</span></div><div class="st"><span class="dot" style="background:var(--green)"></span>Block on track &middot; recovery good</div></div>
+    <div class="dept"><div class="h"><span class="name">📚 Research</span><span class="count">3</span></div><div class="st"><span class="dot" style="background:var(--blue)"></span>3 briefs in flight</div></div>
+    <div class="dept"><div class="h"><span class="name">💰 Finance</span><span class="count">10</span></div><div class="st"><span class="dot" style="background:var(--green)"></span>Allocation reviewed</div></div>
+    <div class="dept"><div class="h"><span class="name">🛠️ Dashboard &amp; Tools</span><span class="count">5</span></div><div class="st"><span class="dot" style="background:var(--green)"></span>Renderer green &middot; 0 drift</div></div>
+    <div class="dept"><div class="h"><span class="name">🎓 Learning</span><span class="count">6</span></div><div class="st"><span class="dot" style="background:var(--ink3)"></span>4 tips queued for review</div></div>
+    <div class="dept"><div class="h"><span class="name">📣 Social &amp; Marketing</span><span class="count">6</span></div><div class="st"><span class="dot" style="background:var(--amber)"></span>2 posts scheduled</div></div>
+    <div class="dept"><div class="h"><span class="name">🚀 Entrepreneur</span><span class="count">6</span></div><div class="st"><span class="dot" style="background:var(--ink3)"></span>1 venture in review</div></div>
+  </div>
+
+  <div class="pipeline">
+    <div class="h">Flagship pipeline &mdash; every package runs the gauntlet before it reaches a human</div>
+    <div class="flow">
+      <span class="step">Strategy</span><span class="arr">&rarr;</span>
+      <span class="step">Draft</span><span class="arr">&rarr;</span>
+      <span class="step attack">Coverage</span><span class="arr">&middot;</span>
+      <span class="step attack">Truthfulness</span><span class="arr">&middot;</span>
+      <span class="step attack">Skeptic</span><span class="arr">&middot;</span>
+      <span class="step attack">Red-team</span><span class="arr">&rarr;</span>
+      <span class="step">Humanize</span><span class="arr">&rarr;</span>
+      <span class="step gate">QC gates</span><span class="arr">&rarr;</span>
+      <span class="step gate">Committee</span><span class="arr">&rarr;</span>
+      <span class="step done">Human approves &check;</span>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Illustrative view &mdash; sample data, no personal records. Live system runs locally.</span>
+    <span>Executive Office &middot; built on Claude Code</span>
+  </div>
+</body></html>

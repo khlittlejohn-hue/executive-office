@@ -17,6 +17,7 @@ Each row pairs a function with the role that owns it.
 ## Contents
 
 - [Leadership layer](#leadership-layer)
+- [Model-tier routing team (3)](#model-tier-routing-team-3)
 - [Careers: the job-search pipeline (23)](#careers-the-job-search-pipeline-23)
   - [The case-study studio (8)](#the-case-study-studio-8)
 - [Research and Intelligence (3)](#research-and-intelligence-3)
@@ -35,7 +36,7 @@ Each row pairs a function with the role that owns it.
 
 ## The count, verified
 
-87 department specialists, plus the 3-role leadership layer, plus the 14-agent QA team, is 104 named agents. Add the 3-agent apex governance layer and the total is 107, which is why the system is described by the round floor of 100+. The full breakdown, department by department, is in [Totals](#totals) at the bottom.
+87 department specialists, plus the 3-role leadership layer, the 3-agent model-tier routing team, and the 14-agent QA team, is 107 named agents. Add the 3-agent apex governance layer and the total is 110, which is why the system is described by the round floor of 100+. The full breakdown, department by department, is in [Totals](#totals) at the bottom.
 
 ## Leadership layer
 
@@ -46,6 +47,16 @@ The three roles that sit above and beside the departments. The Chief of Staff ag
 | Cross-department aggregation, daily brief, approval queue, dispatch routing. The single point of accountability. | Chief of Staff |
 | Hour-by-hour task list, day-of nudges, quick lookups, inbound routing. Peer to the CoS, not under it. | Executive Assistant |
 | Sits outside every pipeline. Reviews all agents for drift and contradiction, watches sessions for repeated friction, scans for unused platform capability. Proposes edits, never applies them. | Strategic Coach |
+
+## Model-tier routing team (3)
+
+Not every task deserves the same model. Three agents hold the routing judgment itself — which tier a task deserves, and the final call when work escalates all the way up. (See [ARCHITECTURE.md § Model-tier routing](../ARCHITECTURE.md#6--model-tier-routing) for the cheap/mid/strong pattern this team runs.)
+
+| Function | Role |
+|---|---|
+| Runs the default execution tier — standard drafting, research, structured pipeline work, first-pass everything; escalates upward only when a task specifically calls for it. | Sonnet-tier Operator |
+| Takes on complex builds, hard debugging, and adversarial review; escalates judgment calls upward, de-escalates mechanical work downward. | Opus-tier Specialist |
+| Holds final say on the highest-reasoning-tier work; routes work down to the other two and signs off before anything ships. | Fable-tier Lead |
 
 ## Careers: the job-search pipeline (23)
 
@@ -248,4 +259,4 @@ Domain critics, each modeled on a recognized authority in their field, who walk 
 
 ## Totals
 
-3 leadership roles, 12 departments, and a 14-agent QA team. The departments carry Careers (23, including the 8-agent case-study studio added 2026-07-11), Research (3), Finance (10), Calendar (3), Email (4), Communications (6), Lifestyle and Operations (7), Fitness (7), Dashboard and Tools (6), Learning (6), Social and Marketing (6), and Entrepreneur (6), for 87 department specialists. With the 3-person leadership layer and the 14-agent QA team, that is 104 named agents in the catalog above, each a single-purpose unit you can actually hold in your head. A 3-agent apex governance layer sits over the whole system as its final quality gate; it decides nothing externally and sends nothing. Counting it, the system runs 107 named agents in all, which is why it is described by the round floor of 100+.
+3 leadership roles, 12 departments, a 3-agent model-tier routing team, and a 14-agent QA team. The departments carry Careers (23, including the 8-agent case-study studio added 2026-07-11), Research (3), Finance (10), Calendar (3), Email (4), Communications (6), Lifestyle and Operations (7), Fitness (7), Dashboard and Tools (6), Learning (6), Social and Marketing (6), and Entrepreneur (6), for 87 department specialists. With the 3-person leadership layer, the 3-agent model-tier routing team, and the 14-agent QA team, that is 107 named agents in the catalog above, each a single-purpose unit you can actually hold in your head. A 3-agent apex governance layer sits over the whole system as its final quality gate; it decides nothing externally and sends nothing. Counting it, the system runs 110 named agents in all, which is why it is described by the round floor of 100+.

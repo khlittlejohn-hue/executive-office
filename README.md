@@ -1,10 +1,10 @@
 # Executive Office: a multi-agent AI operations system
 
 ![Built with Claude Code](https://img.shields.io/badge/Built_with-Claude_Code-d97757?style=flat-square)
-![Departments](https://img.shields.io/badge/Departments-12-5aa2ff?style=flat-square)
-![Agents](https://img.shields.io/badge/Agents-100%2B-34d399?style=flat-square)
+![Departments](https://img.shields.io/badge/Departments-12-6b7280?style=flat-square)
+![Agents](https://img.shields.io/badge/Agents-100%2B-6b7280?style=flat-square)
 ![External actions](https://img.shields.io/badge/External_actions-human_approved-f5c451?style=flat-square)
-![Approach](https://img.shields.io/badge/Applied_AI-orchestration-a78bfa?style=flat-square)
+![Approach](https://img.shields.io/badge/Applied_AI-orchestration-6b7280?style=flat-square)
 
 For 12+ years I have been the Chief of Staff and Strategy & Operations leader who builds the operating systems other organizations run on. Naturally, I built one for my own.
 
@@ -84,7 +84,7 @@ flowchart TB
     COS -.audited by.-> QA
 
     classDef p fill:#fde68a,stroke:#92400e,stroke-width:3px,color:#000
-    classDef c fill:#bfdbfe,stroke:#1e40af,stroke-width:2px,color:#000
+    classDef c fill:#d1d5db,stroke:#374151,stroke-width:2px,color:#000
     classDef a fill:#fed7aa,stroke:#9a3412,stroke-dasharray:5 3,color:#000
     class Principal p
     class COS,EA c

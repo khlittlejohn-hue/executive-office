@@ -2,7 +2,7 @@
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f5c451"/><stop offset="1" stop-color="#ffe6a8"/></linearGradient>
     <radialGradient id="ga" cx="0.82" cy="0.05" r="0.9"><stop offset="0" stop-color="#f5c451" stop-opacity="0.15"/><stop offset="0.6" stop-color="#f5c451" stop-opacity="0"/></radialGradient>
-    <radialGradient id="gb" cx="0.05" cy="1.0" r="0.7"><stop offset="0" stop-color="#5aa2ff" stop-opacity="0.12"/><stop offset="0.7" stop-color="#5aa2ff" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gb" cx="0.05" cy="1.0" r="0.7"><stop offset="0" stop-color="#f5c451" stop-opacity="0.12"/><stop offset="0.7" stop-color="#f5c451" stop-opacity="0"/></radialGradient>
   </defs>
   <rect width="1280" height="640" fill="#0c0b0e"/>
   <rect width="1280" height="640" fill="url(#ga)"/>
@@ -42,16 +42,16 @@
     <line x1="975.4" y1="306.0" x2="886.2" y2="254.5" stroke="#3a3744" stroke-width="1.2" opacity="0.5"/>
     <line x1="990.0" y1="291.4" x2="938.5" y2="202.2" stroke="#3a3744" stroke-width="1.2" opacity="0.5"/>
     <circle cx="1010" cy="326" r="150" fill="none" stroke="#3a3744" stroke-width="1.2" opacity="0.35"/>
-    <circle cx="1010.0" cy="176.0" r="7" fill="#5aa2ff"/>
+    <circle cx="1010.0" cy="176.0" r="7" fill="#f5c451"/>
     <circle cx="1085.0" cy="196.1" r="7" fill="#a78bfa"/>
     <circle cx="1139.9" cy="251.0" r="7" fill="#34d399"/>
     <circle cx="1160.0" cy="326.0" r="7" fill="#f5c451"/>
-    <circle cx="1139.9" cy="401.0" r="7" fill="#5aa2ff"/>
+    <circle cx="1139.9" cy="401.0" r="7" fill="#f5c451"/>
     <circle cx="1085.0" cy="455.9" r="7" fill="#a78bfa"/>
     <circle cx="1010.0" cy="476.0" r="7" fill="#34d399"/>
     <circle cx="935.0" cy="455.9" r="7" fill="#f472b6"/>
     <circle cx="880.1" cy="401.0" r="7" fill="#f5c451"/>
-    <circle cx="860.0" cy="326.0" r="7" fill="#5aa2ff"/>
+    <circle cx="860.0" cy="326.0" r="7" fill="#f5c451"/>
     <circle cx="880.1" cy="251.0" r="7" fill="#a78bfa"/>
     <circle cx="935.0" cy="196.1" r="7" fill="#34d399"/>
     <circle cx="1010" cy="326" r="52" fill="#1b160833"/>

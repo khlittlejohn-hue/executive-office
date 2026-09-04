@@ -50,11 +50,11 @@ The three roles that sit above and beside the departments. The Chief of Staff ag
 
 ## Model-tier routing team (3)
 
-Not every task deserves the same model. Three agents hold the routing judgment itself — which tier a task deserves, and the final call when work escalates all the way up. (See [ARCHITECTURE.md § Model-tier routing](../ARCHITECTURE.md#6--model-tier-routing) for the cheap/mid/strong pattern this team runs.)
+Not every task deserves the same model. Three agents hold the routing judgment itself, which tier a task deserves, and the final call when work escalates all the way up. (See [ARCHITECTURE.md § Model-tier routing](../ARCHITECTURE.md#6--model-tier-routing) for the cheap/mid/strong pattern this team runs.)
 
 | Function | Role |
 |---|---|
-| Runs the default execution tier — standard drafting, research, structured pipeline work, first-pass everything; escalates upward only when a task specifically calls for it. | Sonnet-tier Operator |
+| Runs the default execution tier (standard drafting, research, structured pipeline work, first-pass everything); escalates upward only when a task specifically calls for it. | Sonnet-tier Operator |
 | Takes on complex builds, hard debugging, and adversarial review; escalates judgment calls upward, de-escalates mechanical work downward. | Opus-tier Specialist |
 | Holds final say on the highest-reasoning-tier work; routes work down to the other two and signs off before anything ships. | Fable-tier Lead |
 

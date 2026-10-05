@@ -2,7 +2,7 @@
 
 A deeper look at how the Executive Office is structured. Sanitized companion to the [README](./README.md).
 
-This is a multi-agent operations system: 100+ agents across 12 departments, run on Claude Code, that draft, review, validate, and surface real day-to-day work. The design goal is not a clever demo. It is a system that stays correct over months of daily use and never takes an irreversible action on the principal's behalf without an explicit human click.
+This is a multi-agent operations system: 120+ agents across 14 departments, run on Claude Code, that draft, review, validate, and surface real day-to-day work. The design goal is not a clever demo. It is a system that stays correct over months of daily use and never takes an irreversible action on the principal's behalf without an explicit human click.
 
 ## The shape
 
@@ -12,7 +12,7 @@ Human (principal)
 ├── Executive Assistant ....... hour-by-hour task list, day-of nudges, quick lookups (peer to CoS)
 ├── Strategic Coach ........... advisory; reviews the whole system for drift and unused capability
 ├── Super-User QA ............. domain critics + a QA program manager file and route tickets
-└── 12 Departments
+└── 14 Departments
     └── each: one lead + N specialists
 ```
 
@@ -36,6 +36,8 @@ Each exposes the same contract: a status file (current state, metrics, recent ac
 | Learning | Curating and adopting workflow improvements |
 | Social & Marketing | Content pipeline and cadence |
 | Entrepreneur | Venture evaluation |
+| App Development | Build-and-operate for Kyle's own software products |
+| KLJ Ventures | Client engagement operations for consulting work run under Kyle's LLC |
 
 ## 1 · Orchestration and dispatch
 

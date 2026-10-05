@@ -31,12 +31,14 @@ Each row pairs a function with the role that owns it.
 - [Learning and Improvement (6)](#learning-and-improvement-6)
 - [Social and Marketing (6)](#social-and-marketing-6)
 - [Entrepreneur and Ventures (6)](#entrepreneur-and-ventures-6)
+- [App Development (13)](#app-development-13)
+- [KLJ Ventures (3)](#klj-ventures-3)
 - [Super-User QA: the standing critics (14)](#super-user-qa-the-standing-critics-14)
 - [Totals](#totals)
 
 ## The count, verified
 
-87 department specialists, plus the 3-role leadership layer, the 3-agent model-tier routing team, and the 14-agent QA team, is 107 named agents. Add the 3-agent apex governance layer and the total is 110, which is why the system is described by the round floor of 100+. The full breakdown, department by department, is in [Totals](#totals) at the bottom.
+103 department specialists, plus the 3-role leadership layer, the 3-agent model-tier routing team, and the 14-agent QA team, is 123 named agents. Add the 3-agent apex governance layer and the total is 126, which is why the system is described by the round floor of 120+. The full breakdown, department by department, is in [Totals](#totals) at the bottom.
 
 ## Leadership layer
 
@@ -236,6 +238,28 @@ A panel that pressure-tests every new venture from 5 angles, then synthesizes a 
 | Founder fit and the gut check: is the principal the right person to build this right now, at this life stage. | Founder Fit |
 | Tech feasibility and scaling: can it be built, with what stack, in what timeframe, and will it hold past 100 users. | Tech Feasibility |
 
+## App Development (13)
+
+The build-and-operate team for three of my own software products. A portfolio lead synthesizes the three product teams' sprint reports into one master release calendar and tracks cross-app dependencies and risk; each product runs its own dedicated team end to end, one product manager, one engineer, one QA lead, and one designer, so no product waits on another's bandwidth.
+
+| Function | Role |
+|---|---|
+| Owns the portfolio-level view across all three products; synthesizes each team's sprint reports into one release calendar, tracks cross-app dependencies and risk. Does not write code or design features directly, that is each product team's job. | Department Head / Portfolio Lead |
+| Owns the product's backlog, sprint plan, and release calendar; runs the sprint-retrospective and forward-roadmap discipline; decides what ships next. One per product. | Product Manager |
+| Owns technical and architecture calls for the product; dispatches and reviews implementation work. One per product. | Engineering Lead |
+| Owns release-gate testing for the product; nothing ships until this role signs off. One per product. | QA Lead |
+| Owns product-taste and visual-consistency sign-off for the product; reviews anything visual before it ships broadly. One per product. | Design/UX Lead |
+
+## KLJ Ventures (3)
+
+The operating department for client engagement work under my LLC: contracts, delivery, and commission tracking for consulting engagements. Distinct from App Development (the product lane, above) and from Finance (which keeps the LLC's tax and expense side). No client is named anywhere in this repository, the same discipline every other department here holds for anything outside what is mine alone to publish.
+
+| Function | Role |
+|---|---|
+| Owns client relationships, engagement scoping, and negotiation posture; owns the client pipeline end to end. | Department Head / Client Partner |
+| Owns day-to-day engagement delivery: call packets, status tracking, the living engagement record. | Engagement Manager |
+| Owns the agreement lifecycle: contracts, the deal-registration ledger, and revenue reporting to Finance. | Contracts and Commission Operations |
+
 ## Super-User QA: the standing critics (14)
 
 Domain critics, each modeled on a recognized authority in their field, who walk every dashboard from a user's perspective and file tickets against anything that does not hold up. A program manager triages and routes; the principal is removed from the QA loop, and tickets reach the brief only after routing. The people who build the surfaces are never the people who grade them: the resume pipeline's rule, applied to the tools.
@@ -259,4 +283,4 @@ Domain critics, each modeled on a recognized authority in their field, who walk 
 
 ## Totals
 
-3 leadership roles, 12 departments, a 3-agent model-tier routing team, and a 14-agent QA team. The departments carry Careers (23, including the 8-agent case-study studio added 2026-07-11), Research (3), Finance (10), Calendar (3), Email (4), Communications (6), Lifestyle and Operations (7), Fitness (7), Dashboard and Tools (6), Learning (6), Social and Marketing (6), and Entrepreneur (6), for 87 department specialists. With the 3-person leadership layer, the 3-agent model-tier routing team, and the 14-agent QA team, that is 107 named agents in the catalog above, each a single-purpose unit you can actually hold in your head. A 3-agent apex governance layer sits over the whole system as its final quality gate; it decides nothing externally and sends nothing. Counting it, the system runs 110 named agents in all, which is why it is described by the round floor of 100+.
+3 leadership roles, 14 departments, a 3-agent model-tier routing team, and a 14-agent QA team. The departments carry Careers (23, including the 8-agent case-study studio added 2026-07-11), Research (3), Finance (10), Calendar (3), Email (4), Communications (6), Lifestyle and Operations (7), Fitness (7), Dashboard and Tools (6), Learning (6), Social and Marketing (6), Entrepreneur (6), App Development (13, added 2026-08-07), and KLJ Ventures (3, added 2026-09-04), for 103 department specialists. With the 3-person leadership layer, the 3-agent model-tier routing team, and the 14-agent QA team, that is 123 named agents in the catalog above, each a single-purpose unit you can actually hold in your head. A 3-agent apex governance layer sits over the whole system as its final quality gate; it decides nothing externally and sends nothing. Counting it, the system runs 126 named agents in all, which is why it is described by the round floor of 120+.

@@ -1,8 +1,8 @@
 # Executive Office: a human-governed AI operating system for executive execution
 
 ![Built with Claude Code](https://img.shields.io/badge/Built_with-Claude_Code-d97757?style=flat-square)
-![Departments](https://img.shields.io/badge/Departments-12-6b7280?style=flat-square)
-![Agents](https://img.shields.io/badge/Agents-100%2B-6b7280?style=flat-square)
+![Departments](https://img.shields.io/badge/Departments-14-6b7280?style=flat-square)
+![Agents](https://img.shields.io/badge/Agents-120%2B-6b7280?style=flat-square)
 ![External actions](https://img.shields.io/badge/External_actions-human_approved-f5c451?style=flat-square)
 ![Approach](https://img.shields.io/badge/Applied_AI-orchestration-6b7280?style=flat-square)
 
@@ -10,7 +10,7 @@ For 12+ years I have been the Chief of Staff and Strategy & Operations leader wh
 
 ![Executive Office Steering Deck](docs/steering-deck.png)
 
-<sub>The Steering Deck: one glance across all 12 departments. This is a demonstration environment built with sample data, no personal records, ever. The live system renders from real state files locally and never commits private data; source for this demo view is at <a href="docs/source/steering-deck-demo.html">docs/source/steering-deck-demo.html</a>.</sub>
+<sub>The Steering Deck: one glance across all 14 departments. This is a demonstration environment built with sample data, no personal records, ever. The live system renders from real state files locally and never commits private data; source for this demo view is at <a href="docs/source/steering-deck-demo.html">docs/source/steering-deck-demo.html</a>.</sub>
 
 ## 1. The problem
 
@@ -34,7 +34,7 @@ Four principles, load-bearing across every department in this repo.
 The system is organized as four planes, the same separation an executive would recognize from running a company rather than from running software.
 
 - **Strategy** decides what and whether. Principles, standing rules, and judgment calls that outlive any single task. This plane sets direction; it does not touch execution directly.
-- **Execution** produces the work. Departments organized around real functions (careers, calendar, email, communications, finance, research, and more), each with a lead who plans and audits and a set of specialists who do the work. 12 single-threaded owners with hard gates: one lead per department, so accountability for a domain's output never splits across two owners, and no department's output reaches the next plane without clearing its gate.
+- **Execution** produces the work. Departments organized around real functions (careers, calendar, email, communications, finance, research, and more), each with a lead who plans and audits and a set of specialists who do the work. 14 single-threaded owners with hard gates: one lead per department, so accountability for a domain's output never splits across two owners, and no department's output reaches the next plane without clearing its gate.
 - **Measurement** remembers and verifies. State files, ledgers, and dashboards that every department writes to and every surface renders from, so there is one number for anything that gets counted, and a durable record of what actually happened.
 - **Interface** is the only plane a human spends attention on. A daily brief, a single approval queue, and interrupts reserved for what actually needs a decision now. Nothing reaches the operator except through here, and nothing leaves the system except through a decision made here.
 
@@ -63,6 +63,8 @@ flowchart TB
     COS --> D10["Learning"]
     COS --> D11["Social & Marketing"]
     COS --> D12["Entrepreneur"]
+    COS --> D13["App Development"]
+    COS --> D14["KLJ Ventures"]
 
     QA["Super-User QA: domain critics file tickets against every surface"]
     COS -.audited by.-> QA
@@ -75,7 +77,7 @@ flowchart TB
     class Coach,QA a
 ```
 
-Each of the 12 departments has a lead who plans and audits, and a bench of specialists, 100+ across the system, who each hold one clearly scoped job. The agent count is a scale fact about how the execution plane is staffed, not the design itself: the design is the four planes, the single-owner departments, and the gates between them. A system with 500 undifferentiated agents and no gates would be a worse system than this one with a tenth as many.
+Each of the 14 departments has a lead who plans and audits, and a bench of specialists, 120+ across the system, who each hold one clearly scoped job. The agent count is a scale fact about how the execution plane is staffed, not the design itself: the design is the four planes, the single-owner departments, and the gates between them. A system with 500 undifferentiated agents and no gates would be a worse system than this one with a tenth as many.
 
 The substrate underneath: Claude Code sub-agents, hooks, scheduled tasks, MCP integrations, slash commands, and file-based memory. See [ARCHITECTURE.md](./ARCHITECTURE.md) for the full diagrammed deep dive, including the flagship attack-defend-validate-decide pipeline.
 
@@ -102,8 +104,8 @@ Three incidents from the system's operating record, written as management lesson
 
 | | |
 |---|---|
-| **Departments** | 12, each a self-contained team with its own lead and specialists |
-| **Agents** | 100+, each with one clear role, its own instructions, and a scoped tool set |
+| **Departments** | 14, each a self-contained team with its own lead and specialists |
+| **Agents** | 120+, each with one clear role, its own instructions, and a scoped tool set |
 | **Flagship pipeline** | A 14-stage drafting to adversarial review to validation to go/no-go workflow |
 | **External actions** | Zero autonomous ones; every send and submit waits for a human click |
 | **Substrate** | Claude Code sub-agents, hooks, scheduled tasks, MCP integrations, slash commands, file-based memory |
@@ -117,7 +119,7 @@ Three incidents from the system's operating record, written as management lesson
 | Document | What's inside |
 |---|---|
 | [ARCHITECTURE.md](./ARCHITECTURE.md) | The deep dive: orchestration and dispatch, the adversarial review pipeline, the human-in-the-loop gate model, state and memory, the QA critic layer, and model-tier routing. Six diagrams. |
-| [docs/AGENT-CATALOG.md](./docs/AGENT-CATALOG.md) | The complete roster across 12 departments, leadership, and the QA team, each agent with its single job. |
+| [docs/AGENT-CATALOG.md](./docs/AGENT-CATALOG.md) | The complete roster across 14 departments, leadership, and the QA team, each agent with its single job. |
 | [docs/PIPELINE.md](./docs/PIPELINE.md) | The 14-stage work pipeline, stage by stage. |
 | [docs/PATTERNS.md](./docs/PATTERNS.md) | Six engineering patterns worth stealing, with the failures that produced them. |
 | [examples/](./examples) | Sanitized, runnable-shaped examples, including [a full pipeline run](./examples/pipeline-run-example.md) with a real truthfulness-gate kickback: an agent, a critic, a slash command, a hook, a scheduled task, a status file. |

@@ -6,7 +6,7 @@
 ![External actions](https://img.shields.io/badge/External_actions-human_approved-f5c451?style=flat-square)
 ![Approach](https://img.shields.io/badge/Applied_AI-orchestration-6b7280?style=flat-square)
 
-For 12+ years I have been the Chief of Staff and Strategy & Operations leader who builds the operating systems other organizations run on. Naturally, I built one for my own.
+I am a Strategy & Operations and Chief of Staff leader who builds the operating systems other organizations run on. Naturally, I built one for my own.
 
 ![Executive Office Steering Deck](docs/steering-deck.png)
 
@@ -153,4 +153,4 @@ See [`examples/`](./examples) for sanitized agent and workflow definitions, and 
 This repository is an architecture and patterns showcase. The running system operates on private data that lives locally and is never committed. What's here is the design, not the data.
 
 ---
-Built and maintained by Kyle Littlejohn. Applied-AI orchestration and workflow automation, not model training or ML engineering.
+Built and maintained by Kyle Littlejohn. Applied-AI orchestration and workflow automation.

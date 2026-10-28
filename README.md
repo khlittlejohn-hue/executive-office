@@ -94,7 +94,7 @@ Governance is the part of this system that makes the rest of it trustworthy, and
 
 Three incidents from the system's operating record, written as management lessons rather than engineering postmortems.
 
-**The measurement layer overruled the operator's diagnosis, and that was the point.** Running the system's own career pipeline, I diagnosed a cadence as collapsed and started building a response around that number. The measurement layer I had built then contradicted me: the real weekly data showed the collapse had already begun recovering, and my figure had come from a stale copy of a log and a wrong week boundary. The response was to log the correction against my own analysis, in writing, the same night, then repair the data path structurally so the two sources could not diverge again. The lesson: the measure of an operating leader is not being right, it is building systems that catch you being wrong, and updating in public when they do. A governance system that only ever confirms the operator's instincts is not governance.
+**The measurement layer caught a wrong number before it drove a decision, and that was the point.** A cadence figure in the career pipeline read as a collapse, and a response was being built around it. The system's own weekly data then contradicted that figure, which had come from a stale copy of a log and a wrong week boundary, and showed the real trend had already begun recovering. The correction was logged in writing the same night, and the data path was repaired structurally so the figures could not diverge again. The lesson here is that a governance system earns trust by catching wrong numbers before they drive decisions and by recording the correction in the open. A system that only ever confirms the operator's instincts is not governance.
 
 **A silent split in the source of truth cost real work before it was caught, and the fix was structural, not procedural.** An operational log had split into two paths without anyone deciding that should happen, and fourteen legitimate records were sitting in the path nobody was reading from before the split was found and the records recovered. The tempting fix is a reminder to check both paths. The actual fix was to make the split impossible: the secondary path became a symlink to the primary, so there is structurally one file, not two files someone has to remember to keep in sync. The lesson: when a process failure is really a structure failure, fix the structure. A rule that depends on someone remembering will eventually meet the day they do not.
 
@@ -106,13 +106,13 @@ Three incidents from the system's operating record, written as management lesson
 |---|---|
 | **Departments** | 14, each a self-contained team with its own lead and specialists |
 | **Agents** | 120+, each with one clear role, its own instructions, and a scoped tool set |
-| **Flagship pipeline** | A 14-stage drafting to adversarial review to validation to go/no-go workflow |
+| **Flagship pipeline** | A multi-gate workflow running drafting to adversarial review to validation to go/no-go |
 | **External actions** | Zero autonomous ones; every send and submit waits for a human click |
 | **Substrate** | Claude Code sub-agents, hooks, scheduled tasks, MCP integrations, slash commands, file-based memory |
 | **Control surface** | 30+ slash commands; 20+ recurring scheduled jobs (overnight sourcing, briefs, self-audits) |
 | **Operating scale** | Run daily for months, across thousands of recorded agent sessions and growing |
 
-<sub>A note on the last row: an earlier version of this table cited a specific agent-turn count. That figure is under re-verification against the system's own session logs and is not repeated here until it clears the same proof standard the rest of this repo holds itself to. The department, agent, pipeline, and control-surface counts above are all directly inspectable in this repo.</sub>
+<sub>The department, agent and control-surface counts above are directly inspectable in this repo.</sub>
 
 ## 7. What's here
 
@@ -120,7 +120,7 @@ Three incidents from the system's operating record, written as management lesson
 |---|---|
 | [ARCHITECTURE.md](./ARCHITECTURE.md) | The deep dive: orchestration and dispatch, the adversarial review pipeline, the human-in-the-loop gate model, state and memory, the QA critic layer, and model-tier routing. Six diagrams. |
 | [docs/AGENT-CATALOG.md](./docs/AGENT-CATALOG.md) | The complete roster across 14 departments, leadership, and the QA team, each agent with its single job. |
-| [docs/PIPELINE.md](./docs/PIPELINE.md) | The 14-stage work pipeline, stage by stage. |
+| [docs/PIPELINE.md](./docs/PIPELINE.md) | The multi-gate work pipeline, stage by stage. |
 | [docs/PATTERNS.md](./docs/PATTERNS.md) | Six engineering patterns worth stealing, with the failures that produced them. |
 | [CHANGELOG.md](./CHANGELOG.md) | What changed in this repository and when. |
 | [examples/](./examples) | Sanitized, runnable-shaped examples, including [a full pipeline run](./examples/pipeline-run-example.md) with a real truthfulness-gate kickback: an agent, a critic, a slash command, a hook, a scheduled task, a status file. |
@@ -131,7 +131,7 @@ This isn't a demo. It ships real, dated artifacts every day, all rendered locall
 
 - **A daily executive brief**. A cross-department morning rollup: what each team did overnight, what needs a decision, what's due. One read to run the day.
 - **Mission Control**. The dashboard above: every department's status, the pending-decision queue, and a live "what's left today" action hub. Regenerated on every change with hard invariant checks: every count must tie across every surface, or the build fails loud instead of shipping a wrong number.
-- **Decision-ready work packages**. Each one drafted, adversarially reviewed, truthfulness-audited, humanized, and committee-approved through the 14-stage pipeline before it ever reaches me.
+- **Decision-ready work packages**. Each one drafted, adversarially reviewed, truthfulness-audited, humanized, and committee-approved through the multi-gate pipeline before it ever reaches me.
 - **Living trackers**. Per-domain dashboards (pipeline, outreach, calendar, finance, training) that stay current because every agent writes its state after every action, and a shared completion layer so a thing marked done in one surface is done everywhere.
 - **Drafts staged for one-click approval**. Outreach, replies, briefs, prep docs. The system prepares and surfaces; a human approves and sends. Nothing autonomous reaches the outside world.
 

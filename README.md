@@ -122,6 +122,7 @@ Three incidents from the system's operating record, written as management lesson
 | [docs/AGENT-CATALOG.md](./docs/AGENT-CATALOG.md) | The complete roster across 14 departments, leadership, and the QA team, each agent with its single job. |
 | [docs/PIPELINE.md](./docs/PIPELINE.md) | The 14-stage work pipeline, stage by stage. |
 | [docs/PATTERNS.md](./docs/PATTERNS.md) | Six engineering patterns worth stealing, with the failures that produced them. |
+| [CHANGELOG.md](./CHANGELOG.md) | What changed in this repository and when. |
 | [examples/](./examples) | Sanitized, runnable-shaped examples, including [a full pipeline run](./examples/pipeline-run-example.md) with a real truthfulness-gate kickback: an agent, a critic, a slash command, a hook, a scheduled task, a status file. |
 
 ### What it produces

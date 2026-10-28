@@ -70,7 +70,7 @@ The flagship department. A positioning brief opens the pipeline; parallel drafti
 | Bookends the pipeline: sets the positioning brief first, makes the final holistic go or no-go last. | Strategy Lead and Committee Chair |
 | Mirrors the job description's language where truthful; preserves a locked canonical format. | Resume Tailor |
 | Independently scores keyword coverage against the job description; kicks back to the writer below threshold. The auditor is never the author. | ATS Auditor |
-| Cover letters, cold outreach, InMails, connection notes, referral asks. Three voice registers. Drafts only. | Cover-Letter and Outreach Writer |
+| Cover letters, cold outreach emails, referral asks. Three voice registers. Drafts only. | Cover-Letter and Outreach Writer |
 | Finds named recruiters, hiring managers, and warm paths; reads company priorities and what the company actually values. | People and Company Intel |
 | The truthfulness gate. Flags fabrication, inflated metrics, and borrowed pedigree across resume, cover letter, and outreach. Nothing ships without sign-off. | Achievement Verifier |
 | Reads the package the way a skeptical recruiter does in 15 seconds, hunting for reasons to reject. | Recruiter Simulator |

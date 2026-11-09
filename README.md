@@ -4,7 +4,7 @@
 ![External actions](https://img.shields.io/badge/External_actions-human_approved-f5c451?style=flat-square)
 ![Public scope](https://img.shields.io/badge/Public-architecture_%2B_demo-6b7280?style=flat-square)
 
-Executive Office is the AI operating system I designed and run for my own work: a job search, a calendar, email, research and a few side ventures. Specialist agents prepare drafts, status reports and a daily brief. I review and approve everything that leaves the system.
+Executive Office is an AI operating system I designed and run. Specialist agents prepare executive briefs, research, drafts and cross-department status tracking, and I approve everything that leaves the system. I built it around my own work (a job search, calendar, email, research and side ventures), which gives it a real daily operating cadence.
 
 I am a Strategy & Operations leader, and this is a portfolio piece about how I design workflows where AI does the preparation and a person owns the decision.
 
@@ -15,7 +15,7 @@ This repository is an **architecture showcase**, a set of **examples**, and one 
 - **Public:** the design, the agent catalog, sanitized examples, a runnable demo, and this documentation.
 - **Private:** my live data, the working agent configurations, the scripts that run the real system, and anything with personal or client information. None of it is committed here.
 
-Because the running system is private, some claims here cannot be checked from this repository. [docs/EVIDENCE.md](./docs/EVIDENCE.md) says which ones, plainly.
+[docs/EVIDENCE.md](./docs/EVIDENCE.md) says which claims can be checked here and which rest on the private system.
 
 ## Start here
 
@@ -40,6 +40,33 @@ Because the running system is private, some claims here cannot be checked from t
 - **A daily brief.** One read that covers every department: what changed, what is blocked, and what needs my decision today.
 - **Decision-ready packages.** Work that has been drafted, then reviewed by separate agents whose only job is to find problems, before I see it.
 - **Drafts staged for approval.** Outreach, replies and prep documents wait in a queue for my approval.
+
+## What a brief looks like
+
+This is real output from the [runnable demo](./demo), using synthetic department files.
+
+- **Inputs:** four department status files (Calendar, Email, Research, Finance).
+- **Issue found:** Finance is red because a statement export is missing, so month-end reconciliation is blocked.
+- **Decision presented:** whether to proceed without the missing statement. It is listed first, because the department is red.
+
+```text
+EXECUTIVE BRIEF (synthetic data)
+4 departments, 13 open items, 4 decisions need you
+
+DECISIONS
+  1. [Finance] Decide whether to proceed without the missing statement (fin-01)
+  2. [Email] Approve reply to vendor renewal (mail-01)
+  3. [Email] Approve reply to scheduling request (mail-02)
+  4. [Calendar] Approve moving Thursday review to Friday (cal-01)
+
+STATUS
+  RED    Finance   Month-end reconciliation blocked
+           blocked: Statement export missing
+  YELLOW Email     Correspondence sorted, drafts waiting
+           blocked: Two threads need a human reply
+  GREEN  Calendar  Week is conflict-free
+  GREEN  Research  One brief ready for review
+```
 
 ## One request, end to end
 
@@ -91,21 +118,16 @@ The substrate is Claude Code: sub-agents, hooks, scheduled tasks, MCP integratio
 
 **What this repository shows:** the design, a catalog of roles, sanitized examples, and a small runnable demo of two ideas (a brief that refuses inconsistent numbers, and an approval gate that blocks external actions).
 
-**Scope of the evidence:** the repository demonstrates two ideas on synthetic data and describes the rest. How the private hooks are implemented, and any operating metrics, are held privately.
+**Scope of the evidence:** the repository demonstrates two ideas on synthetic data and describes the rest. The demo is a simplified implementation of the pattern, not the private code. The detail is in [docs/EVIDENCE.md](./docs/EVIDENCE.md).
 
-The demo is a separate, simplified implementation of the pattern. It is not the private code.
+### Inventory
 
-### Inventory (counted 2026-11-09)
-
-These are counts of what exists, not measures of quality or impact.
+Counts of what exists, not measures of quality. Operating counts (commands, scheduled tasks, saved sessions) are in [docs/EVIDENCE.md](./docs/EVIDENCE.md).
 
 | Measure | Value | Basis |
 |---|---|---|
 | Departments | 14 | [Agent catalog](./docs/AGENT-CATALOG.md) |
 | Named agents | 120+ | Catalog totals; the arithmetic is checked in [EVIDENCE.md](./docs/EVIDENCE.md) |
-| Slash commands | 48 | Counted on my machine; private |
-| Scheduled-task definitions | 98, of which 19 are marked retired or disabled | Counted on my machine; private |
-| Saved sessions | 307 | Session transcripts on my machine; private |
 
 | Other kinds of evidence | Status |
 |---|---|

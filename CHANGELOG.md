@@ -9,6 +9,7 @@ What changed in this repository, newest first. Dates are commit dates. This log 
 - **Runnable demo.** Added [demo/](./demo): a synthetic brief that refuses inconsistent counts and an approval gate that blocks external actions, with 12 tests and saved expected output.
 - **Example fixes.** Fixed a YAML front matter error in the adversarial reviewer example. Labeled every example by type. Reconciled the daily-brief writer across the scheduled-task and slash-command examples. Marked the pipeline example as a synthetic illustration and replaced a growth figure that resembled a real number.
 - **Claims bounded.** The hook example is labeled pseudocode and no longer reads as a guarantee. The architecture and patterns pages now separate instruction, tool permission, runtime check and interface, and say what the public material does not show.
+- **README tightened.** A more business-focused opening, repeated caveats cut back to one scope statement with detail in EVIDENCE.md, operating counts moved to EVIDENCE.md, and a "What a brief looks like" section showing real demo output from inputs to decision.
 - **Counts rechecked.** Steering Deck demo counts now match the catalog (103 department specialists); both images were regenerated and the department map moved to ARCHITECTURE.md. Added inventory counts with a count date. Removed an unverified count of agents in the pipeline, and an unsupported statement about platform behavior for sub-agent nesting.
 
 ## 2026-10-27

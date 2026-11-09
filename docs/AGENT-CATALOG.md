@@ -42,12 +42,12 @@ Each row pairs a function with the role that owns it.
 
 ## Leadership layer
 
-The three roles that sit above and beside the departments. The Chief of Staff aggregates and reports; the Executive Assistant runs the day; the Coach reviews the whole system from outside it.
+The three roles that sit above and beside the departments. The Chief of Staff aggregates and reports; Daily Operations runs the day; the Coach reviews the whole system from outside it.
 
 | Function | Role |
 |---|---|
 | Cross-department aggregation, daily brief, approval queue, dispatch routing. The single point of accountability. | Chief of Staff |
-| Hour-by-hour task list, day-of nudges, quick lookups, inbound routing. Peer to the CoS, not under it. | Executive Assistant |
+| Hour-by-hour daily plan, day-of reminders, quick lookups, request routing. Peer to the CoS, not under it. | Daily Operations |
 | Sits outside every pipeline. Reviews all agents for drift and contradiction, watches sessions for repeated friction, scans for unused platform capability. Proposes edits, never applies them. | Strategic Coach |
 
 ## Model-tier routing team (3)

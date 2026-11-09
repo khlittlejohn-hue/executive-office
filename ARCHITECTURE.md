@@ -9,7 +9,7 @@ This is a multi-agent operations system: 120+ agents across 14 departments, run 
 ```
 Human (principal)
 ├── Chief of Staff ............ cross-department aggregation, daily brief, approval queue, dispatch routing
-├── Executive Assistant ....... hour-by-hour task list, day-of nudges, quick lookups (peer to CoS)
+├── Daily Operations .......... hour-by-hour daily plan, day-of reminders, quick lookups (peer to CoS)
 ├── Strategic Coach ........... advisory; reviews the whole system for drift and unused capability
 ├── Super-User QA ............. domain critics + a QA program manager file and route tickets
 └── 14 Departments
@@ -26,7 +26,7 @@ Each exposes the same contract: a status file (current state, metrics, recent ac
 |---|---|
 | Careers | A job-search pipeline end to end |
 | Calendar | Scheduling, conflict resolution, meeting prep |
-| Email | Inbox triage, draft replies, escalations |
+| Email | Correspondence sorting, draft replies, escalations |
 | Communications | Voice and tone for all external writing |
 | Lifestyle & Ops | Bills, travel, subscriptions, events |
 | Fitness | Training plans, analytics, nutrition |

@@ -44,11 +44,11 @@ Work flows in one direction: strategy sets the spec, execution produces against 
 flowchart TB
     Principal(("Human"))
     COS["Chief of Staff<br/>aggregation · daily brief · approval queue"]
-    EA["Executive Assistant<br/>task list · day-of nudges"]
+    DOPS["Daily Operations<br/>daily plan · day-of reminders"]
     Coach(["Strategic Coach<br/>system drift + capability review · advisory"])
 
     Principal --> COS
-    Principal -.peer.-> EA
+    Principal -.peer.-> DOPS
     Principal -.advisory.-> Coach
 
     COS --> D1["Careers"]
@@ -73,7 +73,7 @@ flowchart TB
     classDef c fill:#d1d5db,stroke:#374151,stroke-width:2px,color:#000
     classDef a fill:#fed7aa,stroke:#9a3412,stroke-dasharray:5 3,color:#000
     class Principal p
-    class COS,EA c
+    class COS,DOPS c
     class Coach,QA a
 ```
 

@@ -2,7 +2,7 @@
 
 A deeper look at how the Executive Office is structured. Sanitized companion to the [README](./README.md).
 
-This is a multi-agent operations system: 120+ agents across 14 departments, run on Claude Code, that draft, review, validate, and surface real day-to-day work. The design goal is not a clever demo. It is a system that stays correct over months of daily use and never takes an irreversible action on the principal's behalf without an explicit human click.
+This is a multi-agent operations system: 120+ agents across 14 departments, run on Claude Code, that draft, review, validate, and surface day-to-day work. The design goal is not a clever demo. It is a system where anything the outside world would see waits for a person's decision.
 
 ## The shape
 
@@ -16,7 +16,7 @@ Human (principal)
     └── each: one lead + N specialists
 ```
 
-The human is the only actor who performs irreversible external actions. Everything below drafts, prepares, validates, and surfaces.
+By design, a person approves every external action. Everything below drafts, prepares, validates, and surfaces.
 
 ## Departments
 
@@ -38,6 +38,47 @@ Each exposes the same contract: a status file (current state, metrics, recent ac
 | Entrepreneur | Venture evaluation |
 | App Development | Build-and-operate for Kyle's own software products |
 | KLJ Ventures | Client engagement operations for consulting work run under Kyle's LLC |
+
+### Department map
+
+How the 14 departments, the Chief of Staff agent, the coach and the QA layer relate. The human sits at the top; every department reports through the Chief of Staff agent.
+
+```mermaid
+flowchart TB
+    Principal(("Human"))
+    COS["Chief of Staff<br/>aggregation · daily brief · approval queue"]
+    DOPS["Daily Operations<br/>daily plan · day-of reminders"]
+    Coach(["Strategic Coach<br/>system drift + capability review · advisory"])
+
+    Principal --> COS
+    Principal -.peer.-> DOPS
+    Principal -.advisory.-> Coach
+
+    COS --> D1["Careers"]
+    COS --> D2["Calendar"]
+    COS --> D3["Email"]
+    COS --> D4["Communications"]
+    COS --> D5["Lifestyle & Ops"]
+    COS --> D6["Fitness"]
+    COS --> D7["Research"]
+    COS --> D8["Finance"]
+    COS --> D9["Dashboard & Tools"]
+    COS --> D10["Learning"]
+    COS --> D11["Social & Marketing"]
+    COS --> D12["Entrepreneur"]
+    COS --> D13["App Development"]
+    COS --> D14["KLJ Ventures"]
+
+    QA["Super-User QA: domain critics file tickets against every surface"]
+    COS -.audited by.-> QA
+
+    classDef p fill:#fde68a,stroke:#92400e,stroke-width:3px,color:#000
+    classDef c fill:#d1d5db,stroke:#374151,stroke-width:2px,color:#000
+    classDef a fill:#fed7aa,stroke:#9a3412,stroke-dasharray:5 3,color:#000
+    class Principal p
+    class COS,DOPS c
+    class Coach,QA a
+```
 
 ## 1 · Orchestration and dispatch
 
@@ -72,7 +113,7 @@ flowchart TD
     class S1,S2,S3 spec
 ```
 
-The load-bearing constraint is that **sub-agents cannot spawn sub-agents.** The runtime strips the dispatch tool from any agent spawned as a sub-agent, whatever its config claims. So a department lead cannot fan work out itself. It plans and audits, then returns a structured instruction for the orchestrator at the top of the stack to execute. Getting this wrong produces the worst kind of bug: a manager agent that appears to dispatch its team while the calls silently never fire. Making the boundary explicit in the architecture turned a whole class of silent no-ops into an impossible state.
+The load-bearing constraint in my configuration is that sub-agents are not given the dispatch tool. Anthropic documents sub-agent nesting as configurable with a depth limit, so this describes my setup and the design choice I rely on, not a platform rule. In my setup a department lead therefore plans and audits, then returns a structured instruction for the orchestrator at the top of the stack to execute. Getting this wrong produces the worst kind of bug: a manager agent that appears to dispatch its team while the calls silently never fire. Making the boundary explicit in the architecture removed a whole class of silent no-ops.
 
 Dispatch directives never trigger external actions on their own. They route work to a named agent; that agent then decides what to do, bound by its own approval rules. The routing layer moves work around; it does not bypass any gate. Malformed directives (a retired agent name, a target outside the department roster, more than a handful of dispatches in one turn) are halted and surfaced rather than executed.
 
@@ -116,7 +157,7 @@ Two rules give this pipeline its integrity. First, **the agent that writes is ne
 
 ## 3 · The human-in-the-loop gate model
 
-The system draws one bright line: internal mechanics run autonomously, and anything the outside world would see waits for an explicit human action. The gate is enforced in defense-in-depth so a single missed check cannot leak an external action.
+The system draws one bright line: internal mechanics run autonomously, and anything the outside world would see waits for an explicit human action. The gate is designed in layers so that a miss at one layer is meant to be caught by another. The layers are listed below, along with what each one is and is not.
 
 ```mermaid
 flowchart TD
@@ -152,7 +193,9 @@ flowchart TD
 | Posting to a social account | | yes |
 | Writing to a calendar or moving money | | yes |
 
-The middle layer is a runtime pre-tool-use hook: it inspects every tool call and blocks external side effects unless a per-action approval flag is present. Approving an item sets that flag, re-issues the originally blocked call, and logs it. The principal is the only actor who can flip that switch, and no amount of prompt-body confidence changes that, because the gate lives in code the agent does not control.
+The middle layer is a runtime pre-tool-use hook. It is designed to inspect tool calls that match external-effect patterns and block them unless a one-time approval is present. A person approves from the queue; the blocked call is then re-issued and the approval is logged. Because the hook is code in the execution path, it does not depend on an agent following its prompt.
+
+Two limits on that statement. First, a prompt instruction is advice and a tool permission is a boundary: an agent that holds a write tool can write, whatever its instructions say. Second, this repository shows the hook only as [pseudocode](./examples/hook-example.md). It does not demonstrate how approvals are bound to exact actions, how expiry and reuse are handled, or that every tool and execution path is covered, and the private implementation is not published. See [docs/EVIDENCE.md](./docs/EVIDENCE.md).
 
 ## 4 · State and memory architecture
 
@@ -218,7 +261,7 @@ sequenceDiagram
     Critic->>PM: confirmed, close
 ```
 
-The organizing principle across the whole system is that **the auditor is never the author.** It shows up at every level: the critic who files a ticket cannot edit the surface it audits and cannot fix its own ticket; the coverage, truthfulness, skeptic, and red-team critics in the pipeline are different agents from the drafters; the QC validator is separate from the writers; the committee that makes the final holistic call is separate again. A writer grades its own work too kindly, so grading is always someone else's job.
+The organizing principle across the whole system is that **the auditor is never the author.** It shows up at every level: the critic who files a ticket is instructed not to edit the surface it audits or fix its own ticket (this is a role instruction, not a permission boundary: these agents hold a write tool to file tickets, so the separation rests on the instruction and on review, not on removing the ability to edit); the coverage, truthfulness, skeptic, and red-team critics in the pipeline are different agents from the drafters; the QC validator is separate from the writers; the committee that makes the final holistic call is separate again. A writer grades its own work too kindly, so grading is always someone else's job.
 
 ## 6 · Model-tier routing
 

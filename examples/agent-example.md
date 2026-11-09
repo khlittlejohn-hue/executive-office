@@ -6,6 +6,8 @@ tools: Read, Write, Edit, Grep
 
 # Research Brief Writer
 
+> **Example type: template.** A sanitized agent definition showing the pattern. It is not a published copy of a running agent.
+
 An example sub-agent definition, sanitized. It illustrates the pattern every agent in the system follows: a narrow role, a scoped tool set, explicit inputs and outputs, and hard rules including human-in-the-loop.
 
 ## Role

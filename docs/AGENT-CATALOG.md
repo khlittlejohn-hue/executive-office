@@ -136,11 +136,11 @@ Owns the week. Reviews the next seven days, resolves conflicts, protects focus b
 
 ## Email Operations (4)
 
-Reads the inbox, categorizes against fixed buckets, decides priority versus noise, and drafts every reply into a queue. Nothing sends; drafts land ready for a human to send.
+Reads incoming mail, categorizes against fixed buckets, decides priority versus noise, and drafts every reply into a queue. Nothing sends; drafts land ready for a human to send.
 
 | Function | Role |
 |---|---|
-| Reads the inbox, categorizes against the buckets, escalates priority items, routes the rest to the team. | Department Head |
+| Reads incoming mail, categorizes against the buckets, escalates priority items, routes the rest to the team. | Department Head |
 | The bulk volume work: labels, archives obvious noise, marks low-priority newsletters and alerts. | Triage Worker |
 | Drafts careful, articulate replies to recruiters, hiring managers, and executive contacts. Drafts land as drafts. | Formal Drafter |
 | Handles the tricky threads: declines, ghosted follow-ups, awkward reschedules, without escalating them further. | Escalation Handler |

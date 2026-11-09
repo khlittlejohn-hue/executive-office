@@ -1,5 +1,7 @@
 # Status file: the freshness protocol
 
+> **Example type: template, with synthetic values.** The JSON below is an illustration of the shape. It is not a real status file, and the [runnable demo](../demo/status) uses fixtures in a similar shape.
+
 An example of the contract every department implements, sanitized. Each department writes one status file after every meaningful action, and every dashboard renders from these files. A stale file is a stale dashboard, so freshness is enforced as a rule.
 
 ## The file

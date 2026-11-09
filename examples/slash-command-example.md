@@ -1,5 +1,7 @@
 # /brief: daily cross-department brief
 
+> **Example type: template.** A sanitized description of a real command's shape, not its full private definition.
+
 An example slash command, sanitized. It shows how the system packages a multi-step, multi-agent workflow behind a single repeatable entry point.
 
 ## What it does
@@ -13,7 +15,7 @@ An example slash command, sanitized. It shows how the system packages a multi-st
 - `/brief status`, snapshot only, no archive.
 
 ## Design notes
-- Single-writer: only this command writes the daily brief file, which prevents state drift across the system.
+- One writer, two entry points: the command does not write the brief itself. It invokes the Chief of Staff agent in brief mode, the same writer a [scheduled task](./scheduled-task-example.md) would invoke. One owner of the file prevents state drift; there is no file lock, so this is a design convention, not a concurrency guarantee.
 - Read-only on source data: it summarizes department state, it does not mutate it.
 - Human-in-the-loop: decisions are surfaced for approval and never actioned automatically.
 - Parallel fan-out: department summarizers run concurrently, so wall-clock time is the slowest single summary, not the sum.

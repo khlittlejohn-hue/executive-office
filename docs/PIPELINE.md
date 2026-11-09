@@ -1,8 +1,8 @@
 # The application pipeline
 
-The highest-stakes workflow in the system. A single role passes through 14 agents before anything reaches a human review queue. The shape is **attack → defend → validate → decide**: build it, hand it to critics whose only job is to break it, repair, validate against a checklist, and judge it as a whole.
+The highest-stakes workflow in the system. A single role passes through several agents before anything reaches a human review queue. The shape is **attack → defend → validate → decide**: build it, hand it to critics whose only job is to break it, repair, validate against a checklist, and judge it as a whole.
 
-Nothing is ever submitted automatically. The pipeline's entire job is to produce a package a human can review and send with confidence.
+By design, a person reviews and submits every package. The pipeline's entire job is to produce a package a human can review and send with confidence.
 
 ## The stages
 
@@ -10,7 +10,7 @@ Nothing is ever submitted automatically. The pipeline's entire job is to produce
 
 **2 · Drafting (parallel).** Three agents work at once: a résumé tailor that mirrors the JD's language where truthful, a cover-letter writer, and a company-intel agent that surfaces named contacts and warm paths. The résumé holds a single locked canonical format; only wording is tailored per role.
 
-**3–6 · Adversarial review (parallel).** The package is handed to four independent critics, each blind to the others:
+**3 to 6 · Adversarial review (parallel).** The package is handed to four independent critics, each blind to the others:
 
 - **Coverage**. Scores the résumé's keyword coverage against the JD's applicant-tracking requirements and kicks it back below threshold.
 - **Truthfulness**. Audits every claim for fabrication, inflated metrics, and borrowed pedigree (implying experience the candidate doesn't have). Anything that wouldn't survive interview cross-examination is rejected. This is a hard gate.

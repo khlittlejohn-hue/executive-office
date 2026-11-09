@@ -4,7 +4,7 @@ Patterns this system arrived at, usually by getting them wrong first. They gener
 
 ## 1 · Planners are not orchestrators
 
-Sub-agents cannot spawn sub-agents. The runtime strips the dispatch tool from any agent spawned as a sub-agent, regardless of what its config claims. Only the top of the call stack (a human session, a slash-command handler, or a scheduled task) can fan work out.
+In my Claude Code configuration, agents spawned as sub-agents are not given the dispatch tool, so the fan-out happens higher up. Anthropic documents nesting as configurable with a depth limit, so this describes my setup, not a platform rule. In practice the top of the call stack (a human session, a slash-command handler, or a scheduled task) does the fan-out.
 
 The failure this prevents is subtle and silent: a "manager" agent appears to dispatch its team, the prompt reads as if the calls fired, and nothing happens. The fix is to make the boundary explicit in the architecture itself. A department head *plans and audits* and returns a structured instruction; the orchestrator at the top of the stack *executes* the fan-out. When something is broken, you know which layer to look at because the layers are real, not implied.
 
@@ -38,11 +38,11 @@ This one was learned the hard way. An automated reconciler, unable to tell a hum
 
 Creative judgment is model-driven. Counting, joining, rendering, auditing, and enforcing invariants are plain code.
 
-A language model is a poor database and a worse calculator. Asking one to tally a column or guarantee an invariant is asking for confident, occasional wrongness. So the system draws a hard line: agents decide *what* the résumé should say or *whether* a venture is worth pursuing; deterministic scripts decide *how many* roles are in the queue and *whether* every surface agrees. The reliability of the whole system rests on keeping that line clean.
+A language model is a poor database and a worse calculator. Asking one to tally a column or hold an invariant is asking for confident, occasional wrongness. In my workflow the system draws a firm line: agents decide *what* the résumé should say or *whether* a venture is worth pursuing; deterministic scripts decide *how many* roles are in the queue and *whether* every surface agrees. The reliability of the whole system rests on keeping that line clean.
 
 ## 6 · Defense in depth on the one rule that matters
 
-No external action (submit, send, write to a calendar) happens without an explicit human action, and that rule is enforced at three independent layers so a single missed check can't leak it: every agent's prompt forbids it, a runtime hook intercepts the tool call, and the interface only ever presents a queue for human approval. Internal mechanics flow freely; the gate exists solely for anything the outside world would see.
+No external action (submit, send, write to a calendar) happens without an explicit human action, and that rule is built as three layers so that a miss at one is meant to be caught by another: every agent's prompt forbids it, a runtime hook is designed to intercept the tool call, and the interface presents a queue for human approval. These are different kinds of control (an instruction, a runtime check, and a decision surface), and the public [hook example](../examples/hook-example.md) is pseudocode, so it shows the design rather than proving it. Internal mechanics flow freely; the gate exists solely for anything the outside world would see.
 
 ---
 

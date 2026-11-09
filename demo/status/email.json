@@ -1,0 +1,22 @@
+{
+  "department": "Email",
+  "lastUpdated": "2026-01-12T07:05:00",
+  "ryg": "yellow",
+  "headline": "Correspondence sorted, drafts waiting",
+  "metrics": {
+    "open_items": 5
+  },
+  "blockers": [
+    "Two threads need a human reply"
+  ],
+  "needsDecision": [
+    {
+      "id": "mail-01",
+      "text": "Approve reply to vendor renewal"
+    },
+    {
+      "id": "mail-02",
+      "text": "Approve reply to scheduling request"
+    }
+  ]
+}

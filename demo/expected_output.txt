@@ -1,0 +1,28 @@
+== 1. Build the brief from the status files ==
+EXECUTIVE BRIEF (synthetic data)
+4 departments, 13 open items, 4 decisions need you
+
+DECISIONS
+  1. [Finance] Decide whether to proceed without the missing statement (fin-01)
+  2. [Email] Approve reply to vendor renewal (mail-01)
+  3. [Email] Approve reply to scheduling request (mail-02)
+  4. [Calendar] Approve moving Thursday review to Friday (cal-01)
+
+STATUS
+  RED    Finance   Month-end reconciliation blocked
+           blocked: Statement export missing
+  YELLOW Email     Correspondence sorted, drafts waiting
+           blocked: Two threads need a human reply
+  GREEN  Calendar  Week is conflict-free
+  GREEN  Research  One brief ready for review
+
+== 2. A rollup that disagrees with its sources is refused ==
+REFUSING TO RENDER:
+  - rollup says open_items=99 but the department files add up to 13
+
+== 3. An external action without approval is blocked ==
+BLOCKED: queued for human approval as fd8ab56e657e48f9
+
+== 4. A person approves that exact action, and it runs once ==
+ALLOWED (approved fd8ab56e657e48f9): would send 'Renewal' to vendor@example.com (stub, nothing sent)
+BLOCKED: queued for human approval as fd8ab56e657e48f9

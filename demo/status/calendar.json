@@ -1,0 +1,16 @@
+{
+  "department": "Calendar",
+  "lastUpdated": "2026-01-12T07:00:00",
+  "ryg": "green",
+  "headline": "Week is conflict-free",
+  "metrics": {
+    "open_items": 3
+  },
+  "blockers": [],
+  "needsDecision": [
+    {
+      "id": "cal-01",
+      "text": "Approve moving Thursday review to Friday"
+    }
+  ]
+}

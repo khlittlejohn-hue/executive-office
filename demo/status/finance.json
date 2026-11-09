@@ -1,0 +1,18 @@
+{
+  "department": "Finance",
+  "lastUpdated": "2026-01-12T06:55:00",
+  "ryg": "red",
+  "headline": "Month-end reconciliation blocked",
+  "metrics": {
+    "open_items": 4
+  },
+  "blockers": [
+    "Statement export missing"
+  ],
+  "needsDecision": [
+    {
+      "id": "fin-01",
+      "text": "Decide whether to proceed without the missing statement"
+    }
+  ]
+}
